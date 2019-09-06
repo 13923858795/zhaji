@@ -1,0 +1,98 @@
+version: "3"
+services:
+  flask:
+    image: registry.cn-shanghai.aliyuncs.com/weiguda/quatek_esd_backend
+    build: ./backend
+    restart: always
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./backend/app:/app/app
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
+    networks:
+      - quatek_net
+  celery_worker:
+    image: registry.cn-shanghai.aliyuncs.com/weiguda/quatek_esd_backend
+    restart: always
+    ports:
+      - "5858:5858"
+    command: celery worker -A app.mod_task.tasks -P eventlet
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
+    networks:
+      - quatek_net
+  celery_beat:
+    image: registry.cn-shanghai.aliyuncs.com/weiguda/quatek_esd_backend
+    restart: always
+    command: celery -A app.mod_task.tasks beat -S celerybeatmongo.schedulers.MongoScheduler
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
+    networks:
+      - quatek_net
+  vue:
+    image: registry.cn-shanghai.aliyuncs.com/weiguda/quatek_esd_frontend
+    build: ./frontend
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./frontend/dist:/usr/share/nginx/html
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
+    networks:
+      - quatek_net
+  mongo:
+    image: "mongo:4"
+    restart: always
+    ports:
+      - "27017:27017"
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
+    networks:
+      - quatek_net
+    volumes:
+      - "mongodb:/data/db"
+  redis:
+    image: "redis:5-alpine"
+    restart: always
+    ports:
+      - "6379:6379"
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
+    networks:
+      - quatek_net
+    volumes:
+      - "redis:/data"
+  mongo-express:
+    image: mongo-express:latest
+    environment:
+      - ME_CONFIG_BASICAUTH_USERNAME=quatek
+      - ME_CONFIG_BASICAUTH_PASSWORD=quatek
+    ports:
+      - "8081:8081"
+    restart: always
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
+    networks:
+      - quatek_net
+
+volumes:
+  redis:
+  mongodb:
+networks:
+  quatek_net:
