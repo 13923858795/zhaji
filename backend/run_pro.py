@@ -2,7 +2,6 @@ import os
 import sys
 import logging
 from logging import handlers
-import config
 from app import create_app, socketio
 
 
@@ -32,9 +31,7 @@ def get_logger(file):
 
 logger = get_logger(__file__)
 
-os.environ['MONGODB_DB'] = config.MONGODB_DB
-os.environ['MONGODB_HOST'] = config.MONGODB_HOST
-os.environ['REDIS_URL'] = config.REDIS_URL
+
 
 
 if __name__ == "__main__":
