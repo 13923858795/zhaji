@@ -1,24 +1,20 @@
 from uuid import uuid1
-import config
-from app.mod_task.redis_services import Redis
 from celerybeatmongo.models import PeriodicTask
 from flask import Blueprint, abort, current_app, jsonify, make_response, request
 from mongoengine.queryset.visitor import Q
-from app.mod_task.redis_services import Redis
 from app.mod_task.tasks import (
     update_all_cards_to_mc_task,
     delete_all_cards_task,
 )
 
-Redis = Redis(config.REDIS_URL, 6379)
 
 bp = Blueprint("mod_task", __name__)
 
 
-@bp.route("/connect_status", methods=["GET"])
-def connect_status():
-    resp = Redis.get_dev_status()
-    return resp.to_json(), {"Content-Type": "application/json"}
+# @bp.route("/connect_status", methods=["GET"])
+# def connect_status():
+#     resp = Redis.get_dev_status()
+#     return resp.to_json(), {"Content-Type": "application/json"}
 
 
 @bp.route("/task-interval", methods=["GET"])
