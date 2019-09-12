@@ -2,7 +2,7 @@ import os
 import sys
 import logging
 from logging import handlers
-
+import config
 from app import create_app, socketio
 
 
@@ -32,17 +32,12 @@ def get_logger(file):
 
 logger = get_logger(__file__)
 
-
-# os.environ['MONGODB_DB'] = "quatek_web_app"
-# os.environ['MONGODB_HOST'] = "10.1.6.142"
-# os.environ['REDIS_URL'] = "redis://10.1.6.142"
-
-
-
-
+os.environ['MONGODB_DB'] = config.MONGODB_DB
+os.environ['MONGODB_HOST'] = config.MONGODB_HOST
+os.environ['REDIS_URL'] = config.REDIS_URL
 
 
 if __name__ == "__main__":
     app = create_app()
     logger.info("start a flask server")
-    socketio.run(app, host="0.0.0.0", port=5001)
+    socketio.run(app, host="0.0.0.0", port=5001, debug=True)

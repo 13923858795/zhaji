@@ -185,8 +185,6 @@ import lodash from "lodash";
 import axios from "axios";
 import fileDownload from "js-file-download";
 
-var delete_flg=0;
-
 export default {
   name: "Cards",
   data() {

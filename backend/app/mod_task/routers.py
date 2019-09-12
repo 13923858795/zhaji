@@ -1,9 +1,9 @@
 from uuid import uuid1
-
+from app.mod_task.redis_services import Redis
 from celerybeatmongo.models import PeriodicTask
 from flask import Blueprint, abort, current_app, jsonify, make_response, request
 from mongoengine.queryset.visitor import Q
-
+from app.mod_task.redis_services import Redis
 from app.mod_task.tasks import (
     update_all_cards_to_mc_task,
     delete_all_cards_task,
@@ -11,6 +11,12 @@ from app.mod_task.tasks import (
 
 
 bp = Blueprint("mod_task", __name__)
+
+
+@bp.route("/connect_status", methods=["GET"])
+def connect_status():
+    resp = Redis.get_dev_status()
+    return resp.to_json(), {"Content-Type": "application/json"}
 
 
 @bp.route("/task-interval", methods=["GET"])
@@ -39,6 +45,7 @@ def task_interval_add_one():
                 every=int(request.json["every"]), period="seconds"
             ),
         )
+        Redis.set_log_every(int(request.json["every"]))
         result = task.save()
         return result.to_json(), {"Content-Type": "application/json"}
 
@@ -97,11 +104,12 @@ def does_task_exist():
                 "app.mod_task.tasks.save_to_other_database",
             ]
         ).count()
+
         if (
             q == "app.mod_task.tasks.get_logs_from_mc_task"
             or q == "app.mod_task.tasks.save_to_other_database"
         ) and tasks_count > 0:
-            # if tasks_count > 0:
+
             return (
                 jsonify({"does_task_exist": True}),
                 {"Content-Type": "application/json"},

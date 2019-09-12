@@ -15,7 +15,6 @@ import threading
 import time
 from email.message import EmailMessage
 from logging import handlers
-
 import pyexcel
 from celery import Celery
 from flask_socketio import SocketIO
@@ -30,13 +29,25 @@ from app.mod_gate.models import Card
 from app.mod_gate.utils import card_log_calculate, normalize_card_number
 from app.mod_system_config.models import SystemConfig
 
+from app.mod_task.redis_services import Redis
+import config
+
+
 # load configs
-MONGODB_DB = os.environ.get("MONGODB_DB", "quatek_web_app")
-MONGODB_HOST = os.environ.get("MONGODB_HOST", "127.0.0.1")
-MONGODB_PORT = os.environ.get("MONGODB_PORT", 27017)
-REDIS_URL = os.environ.get("REDIS_URL", "redis://127.0.0.1")
-SOCKET_HOST = os.environ.get("SOCKET_HOST", "0.0.0.0")
-SOCKET_PORT = os.environ.get("SOCKET_PORT", 5858)
+# MONGODB_DB = os.environ.get("MONGODB_DB", "quatek_web_app")
+# MONGODB_HOST = os.environ.get("MONGODB_HOST", "127.0.0.1")
+# MONGODB_PORT = os.environ.get("MONGODB_PORT", 27017)
+# REDIS_URL = os.environ.get("REDIS_URL", "redis://127.0.0.1")
+# SOCKET_HOST = os.environ.get("SOCKET_HOST", "0.0.0.0")
+# SOCKET_PORT = os.environ.get("SOCKET_PORT", 5858)
+
+MONGODB_DB = config.MONGODB_DB
+MONGODB_HOST = config.MONGODB_HOST
+MONGODB_PORT = config.MONGODB_PORT
+REDIS_URL = config.REDIS_URL
+SOCKET_HOST = config.SOCKET_HOST
+SOCKET_PORT = config.MONGODB_PORT
+
 
 
 # logging
@@ -477,6 +488,8 @@ class GetCardTestLogHandler(socketserver.BaseRequestHandler):
         except:
             logger.exception("error in GetCardTestLogHandler")
 
+        Redis.save_log_status(mc_client["mc_id"]) # 保存设备获取状态，用作判断是否在连线
+
         logger.info(
             f'start GetCardTestLogHandler for <MC(name={mc_client["name"]}, mc_id={mc_client["mc_id"]})>'
         )
@@ -779,6 +792,7 @@ class ThreadedTCPServer(socketserver.ThreadingMixIn, socketserver.TCPServer):
         bind_and_activate=True,
         p_data=None,
     ):
+
         super().__init__(
             server_address, RequestHandlerClass, bind_and_activate=True
         )

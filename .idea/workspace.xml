@@ -2,32 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="747acae3-c7bc-45e9-9cbb-6624a32a3439" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/app.a3dbf617.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/chunk-vendors.77e62442.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/gate.59ac3a28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/icons/android-chrome-192x192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/icons/android-chrome-512x512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/icons/apple-touch-icon-120x120.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/icons/apple-touch-icon-152x152.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/icons/apple-touch-icon-180x180.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/icons/apple-touch-icon-60x60.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/icons/apple-touch-icon-76x76.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/icons/apple-touch-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/icons/favicon-16x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/icons/favicon-32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/icons/msapplication-icon-144x144.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/icons/mstile-150x150.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/icons/safari-pinned-tab.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/logo.bf36c058.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/app.45f8e79c.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/app.45f8e79c.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/chunk-vendors.eee8a799.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/chunk-vendors.eee8a799.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/manifest.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/mod_task/redis_services.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/mod_task/routers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/mod_task/routers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/mod_task/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/mod_task/tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/run_pro.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/run_pro.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Cards.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Cards.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,11 +19,117 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/app/mod_task/routers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1634">
+              <caret line="102" column="57" selection-start-line="102" selection-start-column="57" selection-end-line="102" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/app/mod_system_config/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/app/mod_socketio/routers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/run_pro.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="684">
+              <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="608">
+              <caret line="69" column="13" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="13" />
+              <folding>
+                <element signature="e#946#1259#0" />
+                <element signature="e#1262#1490#0" />
+                <element signature="e#1724#2034#0" />
+                <element signature="e#2036#2064#0" />
+                <element signature="e#2065#2088#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/components/ConfigClassTime.vue">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/components/ConfigCrontabTask.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3458">
+              <caret line="182" column="60" selection-start-line="182" selection-start-column="38" selection-end-line="182" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker-compose.debug.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>dis</find>
+      <find>delete_flg</find>
+      <find>ce</find>
+      <find>get_logs_from_mc_task</find>
+      <find>beat</find>
+      <find>save_to_other_database</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -50,12 +139,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/quatek_web_app_project/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/frontend/src/components/Cards.vue" />
+        <option value="$PROJECT_DIR$/backend/run_pro.py" />
+        <option value="$PROJECT_DIR$/backend/app/mod_task/tasks.py" />
+        <option value="$PROJECT_DIR$/backend/test.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="7" />
-    <option name="y" value="4" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="2" />
+    <option name="y" value="3" />
     <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
@@ -72,6 +166,11 @@
               <item name="zhaji" type="b2602c69:ProjectViewProjectNode" />
               <item name="zhaji" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="zhaji" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhaji" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -79,7 +178,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../quatek_web_app_project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -92,6 +191,34 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="run_pro" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="zhaji" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/run_pro.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.run_pro" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -106,10 +233,20 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="2" y="3" width="1920" height="1080" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17228661" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17215727" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -118,11 +255,11 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.4208243" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.41323212" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -132,13 +269,157 @@
     <entry file="file://$PROJECT_DIR$/quatek_web_app_project/.gitignore" />
     <entry file="file://$PROJECT_DIR$/.gitignore" />
     <entry file="file://$PROJECT_DIR$/quatek_web_app_project/frontend/.dockerignore" />
+    <entry file="file://$PROJECT_DIR$/frontend/.dockerignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="3" selection-start-column="3" selection-end-column="3" />
+          <first_editor relative-caret-position="114">
+            <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/router.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/registerServiceWorker.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/ConfigIntervalTask.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/Cards.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3534">
+          <caret line="186" selection-start-line="186" selection-end-line="186" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/Pipfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="42" column="10" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/tests/functional_tests/test_functions.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/mod_system_config/utils.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/mod_system_config/routers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/mod_task/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16017">
+          <caret line="856" selection-start-line="472" selection-start-column="12" selection-end-line="472" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/mod_task/routers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1634">
+          <caret line="102" column="57" selection-start-line="102" selection-start-column="57" selection-end-line="102" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/mod_system_config/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/mod_socketio/routers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/run_pro.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/ConfigClassTime.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/ConfigCrontabTask.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3458">
+          <caret line="182" column="60" selection-start-line="182" selection-start-column="38" selection-end-line="182" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.debug.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="69" column="13" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="13" />
+          <folding>
+            <element signature="e#946#1259#0" />
+            <element signature="e#1262#1490#0" />
+            <element signature="e#1724#2034#0" />
+            <element signature="e#2036#2064#0" />
+            <element signature="e#2065#2088#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
         </state>
       </provider>
     </entry>
