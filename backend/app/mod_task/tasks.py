@@ -48,7 +48,7 @@ REDIS_URL = config.REDIS_URL
 SOCKET_HOST = config.SOCKET_HOST
 SOCKET_PORT = config.MONGODB_PORT
 
-
+Redis = Redis(config.REDIS_URL, 6379)
 
 # logging
 logger = logging.getLogger(

@@ -42,6 +42,3 @@ class Redis:
 
     def get(self, k):
         return self.redis.get(k)
-
-
-Redis = Redis(config.REDIS_URL, 6379)

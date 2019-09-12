@@ -1,4 +1,5 @@
 from uuid import uuid1
+import config
 from app.mod_task.redis_services import Redis
 from celerybeatmongo.models import PeriodicTask
 from flask import Blueprint, abort, current_app, jsonify, make_response, request
@@ -9,6 +10,7 @@ from app.mod_task.tasks import (
     delete_all_cards_task,
 )
 
+Redis = Redis(config.REDIS_URL, 6379)
 
 bp = Blueprint("mod_task", __name__)
 
