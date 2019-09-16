@@ -19,6 +19,8 @@ services:
     restart: always
     ports:
       - "5858:5858"
+    volumes:
+      - ./backend/app:/app/app
     command: celery worker -A app.mod_task.tasks -P eventlet
     deploy:
       replicas: 1

@@ -2,11 +2,16 @@
 
 ## frontend
 
-- vuejs
-
-    测试 ： 进入 ./frontent   执行： mpm run serve
-
-
+### vuejs
+    进入 ./frontent
+    npm install   
+    npm run serve
+   
+    打包： npm run build
+   
+   
 ## backend
 
-- flask
+    - flask 启动
+    pipenv shell
+    python run_pro.py

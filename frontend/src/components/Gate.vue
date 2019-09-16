@@ -1,9 +1,15 @@
 <template>
   <div class="col-md-3 text-center gate-box">
     <p class="text-right gate-indicator-row">
-      <span class="badge gate-badge">
+
+      <span v-if=gate.is_online class="badge gate-badge" style = "color: #059c66;">
         <font-awesome-icon icon="circle"/>
       </span>
+      <span v-else="is_online" class="badge gate-badge" style = "color: #FF0000;">
+        <font-awesome-icon icon="circle"/>
+      </span>
+
+
     </p>
 
     <img src="@/assets/gate.png" class="img-fluid gate-img" alt="Gate image">
@@ -70,6 +76,7 @@ export default {
   components: {},
   created() {}
 };
+
 </script>
 
 <style scoped>
@@ -85,9 +92,7 @@ export default {
 .gate-indicator-row {
   margin-bottom: 0;
 }
-.gate-badge {
-  color: #059c66;
-}
+
 .gate-img {
   width: 70%;
   margin-bottom: 10px;

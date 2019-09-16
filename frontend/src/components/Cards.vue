@@ -240,9 +240,11 @@ export default {
                       .then(response => {
                         console.log(response);
                       })
-                      this.get_cards();
 
             }
+
+            this.prevPage();
+
               } else if (delete_confirmed === null) {
                 console.log("canceled");
               } else {

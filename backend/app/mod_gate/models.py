@@ -78,7 +78,6 @@ class CardTest(db.DynamicDocument):
     rsg = db.StringField(default="")  # RSG值
     created_time = db.DateTimeField(default=datetime.datetime.utcnow)
     is_copied_to_other_database = db.BooleanField(default=False)
-
     meta = {"indexes": ["card_number", "card_counter", "test_datetime"]}
 
 

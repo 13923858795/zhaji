@@ -28,6 +28,9 @@ from app.mod_gate.utils import (
     filter_in_out_cardtest_data,
 )
 
+from app.mod_gate.connect_status import connect_status
+
+
 bp = Blueprint("mod_gate", __name__)
 
 
@@ -54,7 +57,18 @@ def gates():
             current_app.logger.exception("get gates failed")
             abort(500)
         else:
-            return gates.to_json(), {"Content-Type": "application/json"}
+            dev_status = connect_status()
+            resp = []
+            for i in gates:
+                mc_id = int(i['mc_id'])
+
+                if mc_id in dev_status:
+                    i['is_online'] = True
+                else:
+                    i['is_online'] = False
+                resp.append(i)
+
+            return jsonify(resp), {"Content-Type": "application/json"}
 
     elif request.method == "POST":
         gates_list = request.json
