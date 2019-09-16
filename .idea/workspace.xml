@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="747acae3-c7bc-45e9-9cbb-6624a32a3439" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/app/mod_gate/connect_status.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/mod_gate/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/mod_gate/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/mod_gate/routers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/mod_gate/routers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/mod_task/routers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/mod_task/routers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/run_pro.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/run_pro.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/dist/css/app.a3dbf617.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/dist/css/chunk-vendors.77e62442.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/dist/css/chunk-vendors.77e62442.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/dist/js/app.45f8e79c.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/dist/js/app.45f8e79c.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/dist/js/chunk-vendors.eee8a799.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/dist/js/chunk-vendors.eee8a799.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Cards.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Cards.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Gate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Gate.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/config.js" afterDir="false" />
-    </list>
+    <list default="true" id="747acae3-c7bc-45e9-9cbb-6624a32a3439" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,8 +236,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17386723" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
