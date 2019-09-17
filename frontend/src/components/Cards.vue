@@ -224,33 +224,14 @@ export default {
   methods: {
 
     delete_many(){
-
-
-        let delete_confirmed = prompt("请输入 YES 确认清空数据!");
-        if (delete_confirmed === "YES") {
-
-            var data = this.cards
-
+            var data = this.cards;
+            var req = new Array();
             for (var i=0;i<data.length;i++)
             {
-
-                  let delete_array = JSON.stringify(data[i]._id.$oid);
-                    axios
-                      .delete(`cards?delete_array=[${delete_array}]`)
-                      .then(response => {
-                        console.log(response);
-                      })
-
+                  req[i] = data[i]._id.$oid
             }
 
-            this.prevPage();
-
-              } else if (delete_confirmed === null) {
-                console.log("canceled");
-              } else {
-                alert("输入错误");
-              }
-
+              this.delete_cards(req);
     },
 
 
@@ -336,7 +317,7 @@ export default {
                   .then(response => {
                     console.log(response);
                     alert("删除成功!");
-                    this.get_cards();
+                    this.nowPage();
                   })
                   .catch(response => {
                     console.log(response);
@@ -348,6 +329,21 @@ export default {
                 alert("输入错误");
               }
     },
+
+  nowPage() {
+
+      let offset = (this.currentPage-1) * 50;
+      axios
+        .get(`cards?offset=${offset}&q=${this.query_string}`)
+        .then(response => {
+          console.log(response);
+          this.cards = response.data;
+        })
+        .catch(response => {
+          console.log(response);
+        });
+    },
+
 
     prevPage() {
       let offset = (this.currentPage - 2) * 50;

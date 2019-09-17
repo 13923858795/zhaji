@@ -106,6 +106,9 @@ def gates():
             return make_response(jsonify({"result": len(return_list)}))
 
 
+
+
+
 @bp.route("/cards", methods=["GET", "POST", "PATCH", "PUT", "DELETE"])
 def cards():
     if request.method == "GET":
