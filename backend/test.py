@@ -1,17 +1,3 @@
-<<<<<<< ff11b17b42834db56a73619055357fa5f94d8be4
-import config
-from pymongo import MongoClient, UpdateOne, bulk
-
-myclient = MongoClient('10.1.6.211', config.MONGODB_PORT)
-mydb = myclient[config.MONGODB_DB]
-mycol = mydb.gate
-
-for x in mycol.find():
-    print(x['mc_id'])
-
-
-
-=======
 # import os
 # from pymongo import MongoClient
 #
