@@ -10,12 +10,14 @@ db = client[MONGODB_DB]
 
 def connect_status():
 
-    db_every = [i for i in db.log_every.find()]
-    if db_every:
-        log_every = db_every[0]['value']
-    else:
-        log_every = 60*2
+    # db_every = [i for i in db.log_every.find()]
+    # if db_every:
+    #     log_every = db_every[0]['value']
+    # else:
+    #     log_every = 60*2
 
+    log_every = 3 * 3600
+    
     """ 获取所有的 设备通讯时间戳 """
     log_data = {}
     for i in db.logs.find():
