@@ -1,7 +1,7 @@
 import eventlet
 
 eventlet.monkey_patch()
-
+import socket
 import copy
 import datetime
 import io
@@ -778,6 +778,102 @@ class DeleteAllCardsFromMcHandler(socketserver.BaseRequestHandler):
             f'stop DeleteAllCardsFromMcHandler for <MC(name={mc_client["name"]}, mc_id={mc_client["mc_id"]})>'
         )
 
+def delete_all_cards():
+
+    s = socket.socket()  # 创建 socket 对象
+    host = SOCKET_HOST  # 获取本地主机名
+    port = SOCKET_PORT  # 设置端口
+    s.bind((host, port))  # 绑定端口
+
+    # pymongo
+    client = MongoClient(MONGODB_HOST, MONGODB_PORT)
+    db = client[MONGODB_DB]
+    cards = db.card
+    gates = db.gate
+
+    s.listen(5)  # 等待客户端连接
+
+    try:
+        c, client_address = s.accept()  # 建立客户端连接
+        c.sendall(b"GET MCID\r\n")
+        data = re.sub(
+            r"CSN.*\r\n|\r|LOG ", "", c.recv(1024).decode()
+        )
+        mc_client_id = (
+            data.replace("\r", "").replace("\n", "").split(" ")[1]
+        )
+        mc_client = gates.find({"mc_id": mc_client_id})[0]
+        gates.update_one(
+            {"mc_id": "mc_client.mc_id"},
+            {
+                "$set": {
+                    "ip": client_address[0],
+                    "port": client_address[1],
+                }
+            },
+        )
+
+        if "MCID" not in data:
+            raise Exception(
+                "get mc error, mc: {} {}".format(
+                    mc_client, client_address
+                )
+            )
+
+        c.close()
+    except:
+        logger.exception("error in DeleteAllCardsFromMcHandler")
+
+    logger.info(
+        f'start DeleteAllCardsFromMcHandler for <MC(name={mc_client["name"]}, mc_id={mc_client["mc_id"]})>'
+    )
+
+    commands = []
+
+    for i in range(6000):
+        # command = f'CLR CARD {i}\r\n'.encode()
+        commands.append(f"CLR CARD {i}\r\n")
+        # self.request.sendall(command)
+        # logger.info(f'send command {command} to <MC(name={mc_client["name"]}, mc_id={mc_client["mc_id"]})>')
+
+    for card in cards.find():
+        # command = f'CLR CARD {card["card_counter"]}\r\n'.encode()
+        commands.append(f'CLR CARD {card["card_counter"]}\r\n')
+        # self.request.sendall(command)
+        # logger.info(f'send command {command} to <MC(name={mc_client["name"]}, mc_id={mc_client["mc_id"]})>')
+
+    for cmd in commands:
+        c, addr = s.accept()  # 建立客户端连接
+
+        c.send(cmd.encode())
+        c.close()
+
+        logger.info(
+         f'receive from <MC(name={mc_client["name"]}, mc_id={mc_client["mc_id"]})>: {c.recv(100000)}'
+        )
+
+
+
+
+    #
+    #
+    # now_time = time.time()
+    # ids = [i for i in range(0, 100)]
+    # comment = []
+    # for i in ids:
+    #     _c = f'CLR CARD {i}\r\n'.encode()
+    #     # comment.append(f'GET CARD {i}\r\n')
+    #
+    #     c, addr = s.accept()  # 建立客户端连接
+    #     print(_c)
+    #     c.send(_c)
+    #
+    #     a = c.recv(1024)
+    #     print(a)
+    #
+    #     c.close()
+
+
 
 class ThreadedTCPServer(socketserver.ThreadingMixIn, socketserver.TCPServer):
     def __init__(
@@ -869,18 +965,26 @@ def get_logs_from_mc_task(server_last_time=3):
 
 @app.task()
 def delete_all_cards_task(server_last_time=3):
-    server = ThreadedTCPServer(
-        (SOCKET_HOST, SOCKET_PORT),
-        DeleteAllCardsFromMcHandler,
-        p_data={"server_last_time": server_last_time},
-    )
-    server_thread = threading.Thread(target=server.serve_forever)
+    # server = ThreadedTCPServer(
+    #     (SOCKET_HOST, SOCKET_PORT),
+    #     DeleteAllCardsFromMcHandler,
+    #     p_data={"server_last_time": server_last_time},
+    # )
+    #
+    # server_thread = threading.Thread(target=server.serve_forever)
+    # server_thread.daemon = True
+    # server_thread.start()
+    # logger.info("start a delete_all_cards_task")
+    # time.sleep(server_last_time)
+    # server.shutdown()
+    # server.server_close()
+    # logger.info("stop the delete_all_cards_task")
+
+    server_thread = threading.Thread(target=delete_all_cards)
     server_thread.daemon = True
     server_thread.start()
     logger.info("start a delete_all_cards_task")
-    time.sleep(server_last_time)
-    server.shutdown()
-    server.server_close()
+    server_thread.join()
     logger.info("stop the delete_all_cards_task")
 
 
