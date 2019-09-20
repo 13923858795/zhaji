@@ -795,9 +795,11 @@ def delete_all_cards():
     def connect_socket():
         while True:
             try:
+                print("尝试连接 socket")
                 s.bind((host, port))  # 绑定端口
                 break
             except BaseException as e:
+                print("连接 socket 失败")
                 time.sleep(5)
 
         return s.accept()
