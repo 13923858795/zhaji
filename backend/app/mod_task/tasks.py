@@ -977,27 +977,27 @@ def get_logs_from_mc_task(server_last_time=3):
 
 @app.task()
 def delete_all_cards_task(server_last_time=3):
-    # server = ThreadedTCPServer(
-    #     (SOCKET_HOST, SOCKET_PORT),
-    #     DeleteAllCardsFromMcHandler,
-    #     p_data={"server_last_time": server_last_time},
-    # )
-    #
-    # server_thread = threading.Thread(target=server.serve_forever)
-    # server_thread.daemon = True
-    # server_thread.start()
-    # logger.info("start a delete_all_cards_task")
-    # time.sleep(server_last_time)
-    # server.shutdown()
-    # server.server_close()
-    # logger.info("stop the delete_all_cards_task")
+    server = ThreadedTCPServer(
+        (SOCKET_HOST, SOCKET_PORT),
+        DeleteAllCardsFromMcHandler,
+        p_data={"server_last_time": server_last_time},
+    )
 
-    server_thread = threading.Thread(target=delete_all_cards)
+    server_thread = threading.Thread(target=server.serve_forever)
     server_thread.daemon = True
     server_thread.start()
     logger.info("start a delete_all_cards_task")
-    server_thread.join()
+    time.sleep(server_last_time)
+    server.shutdown()
+    server.server_close()
     logger.info("stop the delete_all_cards_task")
+
+    # server_thread = threading.Thread(target=delete_all_cards)
+    # server_thread.daemon = True
+    # server_thread.start()
+    # logger.info("start a delete_all_cards_task")
+    # server_thread.join()
+    # logger.info("stop the delete_all_cards_task")
 
 
 @app.task()
