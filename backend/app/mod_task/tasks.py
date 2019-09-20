@@ -783,7 +783,6 @@ def delete_all_cards():
     s = socket.socket()  # 创建 socket 对象
     host = SOCKET_HOST  # 获取本地主机名
     port = SOCKET_PORT  # 设置端口
-    s.bind((host, port))  # 绑定端口
 
     # pymongo
     client = MongoClient(MONGODB_HOST, MONGODB_PORT)
@@ -793,8 +792,19 @@ def delete_all_cards():
 
     s.listen(5)  # 等待客户端连接
 
+    def connect_socket():
+        while True:
+            try:
+                s.bind((host, port))  # 绑定端口
+                break
+            except BaseException as e:
+                time.sleep(5)
+
+        return s.accept()
+
+
     try:
-        c, client_address = s.accept()  # 建立客户端连接
+        c, client_address = connect_socket()  # 建立客户端连接
         c.sendall(b"GET MCID\r\n")
         data = re.sub(
             r"CSN.*\r\n|\r|LOG ", "", c.recv(1024).decode()
@@ -843,8 +853,8 @@ def delete_all_cards():
         # logger.info(f'send command {command} to <MC(name={mc_client["name"]}, mc_id={mc_client["mc_id"]})>')
 
     for cmd in commands:
-        c, addr = s.accept()  # 建立客户端连接
 
+        c, addr = connect_socket()  # 建立客户端连接
         c.send(cmd.encode())
         c.close()
 
