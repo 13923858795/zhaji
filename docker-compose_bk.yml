@@ -14,7 +14,7 @@ services:
         condition: any
     networks:
       - quatek_net
-  
+
 
   celery_beat:
     image: registry.cn-shanghai.aliyuncs.com/weiguda/quatek_esd_backend
