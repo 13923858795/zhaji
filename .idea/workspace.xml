@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="747acae3-c7bc-45e9-9cbb-6624a32a3439" name="Default Changelist" comment="" />
+    <list default="true" id="747acae3-c7bc-45e9-9cbb-6624a32a3439" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/backend/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/中航调用api.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/test_clin.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/test_clin.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,11 +16,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="60" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="60" />
+        <entry file="file://$PROJECT_DIR$/backend/中航调用api.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="437">
+                <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+              </first_editor>
+              <second_editor />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/run_pro.log">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/run_pro.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/test_clin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-684" />
           </provider>
         </entry>
       </file>
@@ -28,27 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/app/mod_gate/routers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/sources.list">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/app/mod_task/tasks.py">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="39" selection-start-line="763" selection-start-column="15" selection-end-line="763" selection-end-column="106" />
+            <state relative-caret-position="-247">
+              <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -56,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/components/Cards.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6080">
-              <caret line="320" column="20" selection-start-line="320" selection-start-column="20" selection-end-line="320" selection-end-column="20" />
+            <state relative-caret-position="5149">
+              <caret line="271" column="33" selection-start-line="271" selection-start-column="15" selection-end-line="271" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -66,7 +81,7 @@
         <entry file="file://$PROJECT_DIR$/backend/app/mod_task/routers.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="8" column="25" selection-start-line="132" selection-start-column="4" selection-end-line="132" selection-end-column="31" />
+              <caret line="8" column="25" selection-start-line="133" selection-start-column="12" selection-end-line="133" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -83,7 +98,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/app/mod_gate/connect_status.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
+            <state relative-caret-position="608">
               <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="35" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -96,9 +111,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>delete_flg</find>
-      <find>ce</find>
-      <find>get_logs_from_mc_task</find>
       <find>beat</find>
       <find>save_to_other_database</find>
       <find>Redis</find>
@@ -126,6 +138,9 @@
       <find>delete_all_cards_task</find>
       <find>DeleteAllCardsFromMcHandler</find>
       <find>MongoClient</find>
+      <find>card_number</find>
+      <find>normalize_card_number</find>
+      <find>upload_cards_excel</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -146,16 +161,16 @@
         <option value="$PROJECT_DIR$/frontend/src/config.js" />
         <option value="$PROJECT_DIR$/frontend/src/components/Cards.vue" />
         <option value="$PROJECT_DIR$/backend/app/mod_gate/connect_status.py" />
-        <option value="$PROJECT_DIR$/backend/test.py" />
         <option value="$PROJECT_DIR$/docker-compose_bk.yml" />
         <option value="$PROJECT_DIR$/backend/app/mod_task/tasks.py" />
+        <option value="$PROJECT_DIR$/backend/test.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2" />
-    <option name="y" value="3" />
-    <option name="width" value="1920" />
+    <option name="x" value="-12" />
+    <option name="y" value="5" />
+    <option name="width" value="1916" />
     <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
@@ -163,6 +178,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -175,28 +191,14 @@
               <item name="zhaji" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="zhaji" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zhaji" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zhaji" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zhaji" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="mod_task" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -286,7 +288,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2402529" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23551106" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -306,43 +308,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backend/app/mod_socketio/routers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/mod_task/redis_services.py" />
-    <entry file="file://$PROJECT_DIR$/backend/run_pro.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/ConfigClassTime.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/ConfigCrontabTask.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3458">
-          <caret line="182" column="60" selection-start-line="182" selection-start-column="38" selection-end-line="182" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/Dockerfile-debug">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -477,30 +442,57 @@
         <state relative-caret-position="-2052" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/test.py" />
+    <entry file="file://$PROJECT_DIR$/backend/sources.list">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/backend/app/mod_gate/routers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="13737">
+          <caret line="753" column="50" selection-start-line="200" selection-start-column="12" selection-end-line="200" selection-end-column="17" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/sources.list">
+    <entry file="file://$PROJECT_DIR$/backend/app/mod_gate/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11837">
+          <caret line="626" selection-start-line="626" selection-end-line="641" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/test.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/mod_task/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/f5c004b3be6ad31ad0fc108141143eb7.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1394" selection-start-column="1394" selection-end-column="1394" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/components/Cards.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6080">
-          <caret line="320" column="20" selection-start-line="320" selection-start-column="20" selection-end-line="320" selection-end-column="20" />
+        <state relative-caret-position="5149">
+          <caret line="271" column="33" selection-start-line="271" selection-start-column="15" selection-end-line="271" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/app/mod_task/routers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="8" column="25" selection-start-line="132" selection-start-column="4" selection-end-line="132" selection-end-column="31" />
+          <caret line="8" column="25" selection-start-line="133" selection-start-column="12" selection-end-line="133" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -513,12 +505,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/app/mod_gate/connect_status.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
+        <state relative-caret-position="608">
           <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="35" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/中航调用api.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="437">
+            <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/run_pro.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/run_pro.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/test_clin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-684" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose_bk.yml">
@@ -530,15 +549,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="60" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/mod_task/tasks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="39" selection-start-line="763" selection-start-column="15" selection-end-line="763" selection-end-column="106" />
+        <state relative-caret-position="-247">
+          <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
         </state>
       </provider>
     </entry>
