@@ -883,7 +883,7 @@ def api_card_create():
             'job_number': req['EMPNO'], 'department': req['DPTNAME2'], 'gender': '0', 'note': req['EMPCARDTID'],
             'belong_to_mc': 'all', 'classes': '1', 'hid_number': ''}
     print(data)
-    cards = Card.objects(card_number=data['card_number'])
+    cards = Card.objects(job_number=data['job_number'])
     ids = []
     cards = json.loads(cards.to_json())
     for i in cards:

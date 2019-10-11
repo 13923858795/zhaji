@@ -11,21 +11,26 @@ import json, requests
 
 
 data = {
-     "EMPNO":"LS092",
-     "EMPNAME":"临时092",
-     "CARDFIXNO":"LS092",
-     "DPTNAME1":"供应商 中航电子ww",
-     "DPTNAME2":"aaaa供应商 中航电子",
+     "EMPNO":"53C48",
+     "EMPNAME":"临时093",
+     "CARDFIXNO":"53C47",
+     "DPTNAME1":"供应商 中航电子",
+     "DPTNAME2":"ccc供应商 中航电子",
      "DPTNAME3":"供应商 中航电子",
      "DPTNAME4":"供应商 中航电子",
-     "EMPCARDTID":"31",
+     "EMPCARDTID": "31",
      "UPD_DATE": "2019/9/29 9:02:49"
     }
-# data ={'id': '5d9da70aa94e4ac68b6d2ca6', 'card_number': '000LS092', 'card_category': '2', 'name': '临时092', 'job_number': 'LS092', 'department': 'aaaa供应商 中航电子', 'gender': '0', 'note': '31', 'belong_to_mc': 'all', 'classes': '1', 'hid_number': ''}
-url = 'http://10.1.6.140:5001/api/cards/update'
+
+url = 'http://10.1.6.219:5001/api/cards/update'
+
+# url_delete = 'http://10.1.6.219:5001/api/cards/delete/5da03ebace8ade2fddf180d6'
 
 
 resp = requests.post(url, data)
+
+
+# resp = requests.delete(url_delete)
 
 r = resp.content
 print(r)
