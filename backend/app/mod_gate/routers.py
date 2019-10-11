@@ -4,6 +4,7 @@ from collections import defaultdict
 
 import flask_excel as excel
 from flask import (
+    jsonify,
     Blueprint,
     abort,
     current_app,
@@ -106,9 +107,6 @@ def gates():
             return make_response(jsonify({"result": len(return_list)}))
 
 
-
-
-
 @bp.route("/cards", methods=["GET", "POST", "PATCH", "PUT", "DELETE"])
 def cards():
     if request.method == "GET":
@@ -180,6 +178,9 @@ def cards():
 
     elif request.method == "DELETE":
         cards_to_delete = json.loads(request.args["delete_array"])
+
+        print(cards_to_delete)
+
         cards_to_delete2 = []
         try:
             for card in cards_to_delete:
@@ -201,6 +202,7 @@ def cards():
 @bp.route("/cards/create", methods=["POST", "PATCH"])
 def card_create():
     data = request.json
+    print(data)
     card_number = ""
     if data["hid_number"].strip():
         card_number = hid_to_normal(data["hid_number"].strip())
@@ -801,3 +803,172 @@ def delete_class_time():
     c = CardClassTime.objects.get(id=data["class_time_id"])
     c.delete()
     return jsonify({"result": "created", "content": c.to_json()}), 200
+
+
+""" 给中航开放的api 接口 """
+
+
+@bp.route("/api/cards/all", methods=["GET"])
+def api_cards():
+    if request.method == "GET":
+        query_string = request.args.get("q", None)
+        hid_number = request.args.get("hid_number", None)
+
+        q_object = Q()
+
+        if query_string:
+            q_object = (
+                q_object
+                | Q(card_number__icontains=normalize_card_number(query_string))
+                | Q(card_category__icontains=query_string)
+                | Q(name__icontains=query_string)
+                | Q(job_number__icontains=query_string)
+                | Q(department__icontains=query_string)
+            )
+
+        if hid_number:
+            q_object = q_object | Q(hid_card_number__icontains=hid_number)
+
+        try:
+            cards = (
+                Card.objects.filter(q_object)
+                .order_by("-created_time")
+            )
+
+        except:
+            current_app.logger.exception("get cards failed")
+            abort(500)
+        else:
+            resp = []
+
+            cards = json.loads(cards.to_json())
+            for i in cards:
+                i['_id'] = i['_id']['$oid']
+                resp.append(i)
+
+            return jsonify(resp)
+
+
+@bp.route("/api/cards/update", methods=["POST"])
+def api_card_create():
+    """
+    {'id': '', 'card_number': 'a', 'card_category': '0', 'name': 'c', 'job_number': 'd', 'department': 'e', 'gender': '0', 'note': 'g', 'belong_to_mc': '', 'classes': 'f', 'hid_number': 'b'}
+
+        {
+     "EMPNO":"LS091",
+     "EMPNAME":"临时091",
+     "CARDFIXNO":"LS091",
+     "DPTNAME1":"供应商 中航电子",
+     "DPTNAME2":"供应商 中航电子",
+     "DPTNAME3":"供应商 中航电子",
+     "DPTNAME4":"供应商 中航电子",
+     "EMPCARDTID":"31",
+     "UPD_DATE": "2019/9/29 9:02:49"
+    }
+
+    :return:
+    """
+
+    # {'id': '', 'card_number': 'CARDFIXNO', 'card_category': '0', 'name': 'EMPNAME', 'job_number': 'EMPNO',
+    #  'department': 'DPTNAME2', 'gender': '0', 'note': 'EMPCARDTID', 'belong_to_mc': 'all', 'classes': '1',
+    #  'hid_number': ''}
+
+    req = request.form
+
+    card_number = req['CARDFIXNO']
+    for i in range(8 - len(req['CARDFIXNO'])):
+        card_number = '0'+ card_number
+
+    data = {'id': '', 'card_number': card_number, 'card_category': '2', 'name': req['EMPNAME'],
+            'job_number': req['EMPNO'], 'department': req['DPTNAME2'], 'gender': '0', 'note': req['EMPCARDTID'],
+            'belong_to_mc': 'all', 'classes': '1', 'hid_number': ''}
+    print(data)
+    cards = Card.objects(card_number=data['card_number'])
+    ids = []
+    cards = json.loads(cards.to_json())
+    for i in cards:
+        ids.append(i['_id']['$oid'])
+    if ids:
+        data['id'] = ids[0]
+        Flag = False
+    else:
+        Flag = True
+
+    if data["hid_number"].strip():
+        card_number = hid_to_normal(data["hid_number"].strip())
+    else:
+        card_number = normalize_card_number(data["card_number"])
+
+    if Flag:
+        try:
+            c1 = Card(
+                card_number=card_number,
+                card_category=data["card_category"].strip(),
+                name=data["name"].strip(),
+                job_number=data["job_number"].strip(),
+                department=data["department"].strip(),
+                gender=data["gender"].strip(),
+                note=data["note"].strip() if data["note"] else "default",
+                belong_to_mc=data["belong_to_mc"].strip(),
+                classes=(
+                    str(data["classes"]).strip().split(",")
+                    if data["classes"]
+                    else ["default"]
+                ),
+                hid_card_number=data["hid_number"],
+            )
+            c1.save()
+        except BaseException as e:
+            current_app.logger.exception("create card failed")
+            return jsonify({"statu": 0, "erro": str(e)})
+        else:
+            update_a_card_to_all_mc_task.delay(json.loads(c1.to_json()))
+            resp = {"statu": 1, "erro": ''}
+            return jsonify(resp)
+    else:
+        try:
+            card = Card.objects.get(id=data["id"])
+            card.card_number = card_number
+            card.card_category = data["card_category"].strip()
+            card.name = data["name"].strip()
+            card.job_number = data["job_number"].strip()
+            card.department = data["department"].strip()
+            card.gender = data["gender"].strip()
+            card.note = data["note"].strip()
+            card.belong_to_mc = data["belong_to_mc"].strip()
+            card.classes = (
+                str(data["classes"]).strip().split(",")
+                if data["classes"]
+                else ["default"]
+            )
+            card.hid_card_number = data["hid_number"]
+            card.save()
+
+        except:
+            current_app.logger.exception("create card failed")
+            abort(500)
+        else:
+            update_a_card_to_all_mc_task.delay(json.loads(card.to_json()))
+            return make_response(card.to_json())
+
+
+
+
+@bp.route("/api/cards/delete/<string:_id>", methods=["DELETE"])
+def api_card_delete(_id):
+        cards_to_delete = [_id]
+        cards_to_delete2 = []
+        try:
+            for card in cards_to_delete:
+                card_obj = Card.objects.get(pk=card)
+                card_2 = json.loads(card_obj.to_json())
+                cards_to_delete2.append(card_2)
+                card_obj.delete()
+        except:
+            current_app.logger.exception("delete cards failed")
+            abort(500)
+
+        else:
+            for card_2 in cards_to_delete2:
+                delete_a_card_from_mc_task.delay(card_2)
+            return make_response(jsonify({"result": len(cards_to_delete)}))

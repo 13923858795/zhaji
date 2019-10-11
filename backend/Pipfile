@@ -23,6 +23,7 @@ pyexcel = "*"
 flask-excel = "*"
 flask-pymongo = "*"
 mailsend = "*"
+requests = "*"
 
 [dev-packages]
 pylint = "*"
