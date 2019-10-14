@@ -16,7 +16,7 @@ def connect_status():
     # else:
     #     log_every = 60*2
 
-    log_every = 3 * 3600
+    log_every = 0.5 * 3600
 
     """ 获取所有的 设备通讯时间戳 """
     log_data = {}
