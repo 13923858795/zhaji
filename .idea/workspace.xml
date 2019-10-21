@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="747acae3-c7bc-45e9-9cbb-6624a32a3439" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,15 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="76" selection-start-line="76" selection-end-line="80" selection-end-column="16" />
-              <folding>
-                <element signature="e#25#327#0" />
-                <element signature="e#330#680#0" />
-                <element signature="e#683#987#0" />
-                <element signature="e#990#1303#0" />
-                <element signature="e#1306#1534#0" />
-              </folding>
+            <state relative-caret-position="361">
+              <caret line="73" column="6" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -175,7 +167,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-12" />
     <option name="y" value="5" />
     <option name="width" value="1916" />
@@ -289,7 +281,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1548999" />
@@ -492,15 +484,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="76" selection-start-line="76" selection-end-line="80" selection-end-column="16" />
-          <folding>
-            <element signature="e#25#327#0" />
-            <element signature="e#330#680#0" />
-            <element signature="e#683#987#0" />
-            <element signature="e#990#1303#0" />
-            <element signature="e#1306#1534#0" />
-          </folding>
+        <state relative-caret-position="361">
+          <caret line="73" column="6" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
         </state>
       </provider>
     </entry>

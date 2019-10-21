@@ -76,8 +76,8 @@ services:
         condition: any
     networks:
       - quatek_net
-#    volumes:
-#      - "redis:/data"
+    volumes:
+      - "redis:/data"
   mongo-express:
     image: mongo-express:latest
     environment:
