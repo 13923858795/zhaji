@@ -32,9 +32,10 @@ def get_logger(file):
 logger = get_logger(__file__)
 
 
-# os.environ['MONGODB_HOST'] = '10.1.6.219'
-# os.environ['REDIS_URL'] = "redis://10.1.6.219"
+os.environ['MONGODB_HOST'] = '10.1.6.219'
+os.environ['REDIS_URL'] = "redis://10.1.6.219"
 
+print("开始启动")
 
 if __name__ == "__main__":
     app = create_app()

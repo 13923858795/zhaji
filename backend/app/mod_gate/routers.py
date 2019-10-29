@@ -882,7 +882,6 @@ def api_card_create():
     data = {'id': '', 'card_number': card_number, 'card_category': '2', 'name': req['EMPNAME'],
             'job_number': req['EMPNO'], 'department': req['DPTNAME2'], 'gender': '0', 'note': req['EMPCARDTID'],
             'belong_to_mc': 'all', 'classes': '1', 'hid_number': ''}
-    print(data)
     cards = Card.objects(job_number=data['job_number'])
     ids = []
     cards = json.loads(cards.to_json())
@@ -950,8 +949,6 @@ def api_card_create():
         else:
             update_a_card_to_all_mc_task.delay(json.loads(card.to_json()))
             return make_response(card.to_json())
-
-
 
 
 @bp.route("/api/cards/delete/<string:_id>", methods=["DELETE"])
