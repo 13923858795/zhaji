@@ -1,36 +1,36 @@
 <template>
   <div>
     <form class="form-inline">
-      <label class="sr-only" for="class_time_name">班别名称</label>
+      <label class="sr-only" for="class_time_name">Class name</label>
       <div class="input-group mb-2 mr-sm-2">
         <input
           type="text"
           class="form-control"
           id="class_time_name"
           v-model="class_time_name"
-          placeholder="班别名称"
+          placeholder="Class name"
         >
       </div>
 
-      <label class="sr-only" for="class_time_from">班别开始时间</label>
+      <label class="sr-only" for="class_time_from">The star time of the class</label>
       <div class="input-group mb-2 mr-sm-2">
         <input
           type="text"
           class="form-control"
           id="class_time_from"
           v-model="class_time_from"
-          placeholder="班别开始时间"
+          placeholder="The star time of the class"
         >
       </div>
 
-      <label class="sr-only" for="class_time_to">班别结束时间</label>
+      <label class="sr-only" for="class_time_to">The end time of the class</label>
       <div class="input-group mb-2 mr-sm-2">
         <input
           type="text"
           class="form-control"
           id="class_time_to"
           v-model="class_time_to"
-          placeholder="班别结束时间"
+          placeholder="The end time of the class"
         >
       </div>
 
@@ -46,16 +46,16 @@
         <table class="table table-striped table-responsive-md">
           <thead>
             <tr>
-              <th scope="col">名称</th>
-              <th scope="col">开始时间</th>
-              <th scope="col">结束时间</th>
-              <th scope="col">删除</th>
+              <th scope="col">Class name</th>
+              <th scope="col">Start time</th>
+              <th scope="col">End time</th>
+              <th scope="col">Delete</th>
             </tr>
           </thead>
 
           <tbody v-if="!class_times.length">
             <tr>
-              <td colspan="4" class="text-center">没有找到班别</td>
+              <td colspan="4" class="text-center">No class found</td>
             </tr>
           </tbody>
 

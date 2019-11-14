@@ -3,9 +3,30 @@
   <component name="ChangeListManager">
     <list default="true" id="747acae3-c7bc-45e9-9cbb-6624a32a3439" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/mod_gate/routers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/mod_gate/routers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/run_pro.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/run_pro.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/dist/css/app.c03d548a.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/dist/js/app.203caefe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/dist/js/app.203caefe.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Attendances.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Attendances.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/BackgroundTask.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BackgroundTask.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/CardCreate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/CardCreate.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/CardTests.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/CardTests.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Cards.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Cards.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Config.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Config.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ConfigClassTime.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ConfigClassTime.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ConfigCrontabTask.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ConfigCrontabTask.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ConfigIntervalTask.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ConfigIntervalTask.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ConfigOtherDatabase.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ConfigOtherDatabase.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ConfigSystemConfig.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ConfigSystemConfig.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ConfigUpdateCardsFromOtherDatabase.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ConfigUpdateCardsFromOtherDatabase.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Gates.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Gates.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/LastFailedUpload.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/LastFailedUpload.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/card_number_convertor_config.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/card_number_convertor_config.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/real_time_data.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/real_time_data.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,88 +37,50 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/app/mod_gate/routers.py">
+        <entry file="file://$PROJECT_DIR$/frontend/src/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="264" selection-start-line="264" selection-end-line="264" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-                <element signature="e#9144#18991#0" />
-                <element signature="e#21306#21445#0" />
-                <element signature="e#21529#23968#0" />
-                <element signature="e#24045#24160#0" />
-                <element signature="e#24236#24531#0" />
-                <element signature="e#24613#24778#0" />
-                <element signature="e#24870#25982#0" />
-                <element signature="e#26061#29693#0" />
-                <element signature="e#29794#30387#0" />
-              </folding>
+            <state relative-caret-position="76">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="79" column="6" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/.dockerignore">
+        <entry file="file://$PROJECT_DIR$/frontend/src/main.js">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/Dockerfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="27" column="18" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="18" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/frontend/src/registerServiceWorker.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/router.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/store.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/vue.config.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/nginx.conf">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/run_pro.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/中航调用api.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="722">
-                <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="38">
-                <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+              <first_editor relative-caret-position="171">
+                <caret line="9" column="11" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="21" />
               </first_editor>
               <second_editor />
             </state>
@@ -105,22 +88,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose_bk.yml">
+        <entry file="file://$PROJECT_DIR$/frontend/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="60" column="11" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
+            <state relative-caret-position="532">
+              <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/app/mod_gate/connect_status.py">
+        <entry file="file://$PROJECT_DIR$/frontend/src/components/Gate.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="418">
+              <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -129,36 +109,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>save_to_other_database</find>
-      <find>Redis</find>
-      <find>5001</find>
-      <find>on</find>
-      <find>gate</find>
-      <find>gates</find>
-      <find>gate-box</find>
-      <find>gate-badge</find>
-      <find>gates.length</find>
-      <find>Gate</find>
-      <find>isOn</find>
-      <find>if</find>
-      <find>is_online</find>
-      <find>delete_many</find>
-      <find>nextPage</find>
-      <find>currentPage</find>
-      <find>page</find>
-      <find>nowPage</find>
-      <find>prevPage</find>
-      <find>get_cards</find>
-      <find>delete_cards</find>
-      <find>delete-all-cards</find>
-      <find>sendall</find>
-      <find>delete_all_cards_task</find>
-      <find>DeleteAllCardsFromMcHandler</find>
-      <find>MongoClient</find>
-      <find>card_number</find>
-      <find>normalize_card_number</find>
-      <find>upload_cards_excel</find>
-      <find>download_excel</find>
+      <find>选择文件</find>
+      <find>未选择任何文件</find>
+      <find>可搜索</find>
+      <find>卡号</find>
+      <find>*</find>
+      <find>上传卡片信息</find>
+      <find>卡片上传模板</find>
+      <find>可进可出</find>
+      <find>只测脚</find>
+      <find>下载1</find>
+      <find>上传</find>
+      <find>左脚</find>
+      <find>Email&amp;SMTP</find>
+      <find>需要验证</find>
+      <find>数据库类型</find>
+      <find>数据库</find>
+      <find>任务</find>
+      <find>秒运行</find>
+      <find>检测门禁系统</find>
+      <find>OFF</find>
+      <find>255</find>
+      <find>style=&quot;color</find>
+      <find>35000KΩ</find>
+      <find>gate-img</find>
+      <find>已经到达最后一页</find>
+      <find>输入</find>
+      <find>卡号转换</find>
+      <find>文件</find>
+      <find>选择</find>
+      <find>input</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -171,11 +151,8 @@
         <option value="$PROJECT_DIR$/backend/app/mod_task/redis_services.py" />
         <option value="$PROJECT_DIR$/backend/app/mod_task/routers.py" />
         <option value="$PROJECT_DIR$/frontend/.eslintrc.js" />
-        <option value="$PROJECT_DIR$/frontend/src/components/Gates.vue" />
         <option value="$PROJECT_DIR$/frontend/src/components/Gate.vue" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/frontend/src/config.js" />
-        <option value="$PROJECT_DIR$/frontend/src/components/Cards.vue" />
         <option value="$PROJECT_DIR$/backend/app/mod_task/tasks.py" />
         <option value="$PROJECT_DIR$/backend/中航调用api.md" />
         <option value="$PROJECT_DIR$/backend/app/mod_gate/connect_status.py" />
@@ -184,13 +161,33 @@
         <option value="$PROJECT_DIR$/backend/app/mod_gate/routers.py" />
         <option value="$PROJECT_DIR$/backend/test.py" />
         <option value="$PROJECT_DIR$/backend/run_pro.py" />
+        <option value="$PROJECT_DIR$/frontend/src/components/Header.vue" />
+        <option value="$PROJECT_DIR$/frontend/src/components/Login.vue" />
+        <option value="$PROJECT_DIR$/frontend/src/components/real_time_data.vue" />
+        <option value="$PROJECT_DIR$/frontend/src/components/Config.vue" />
+        <option value="$PROJECT_DIR$/frontend/src/components/ConfigSystemConfig.vue" />
+        <option value="$PROJECT_DIR$/frontend/src/components/ConfigUpdateCardsFromOtherDatabase.vue" />
+        <option value="$PROJECT_DIR$/frontend/src/components/Index.vue" />
+        <option value="$PROJECT_DIR$/frontend/src/components/CardCreate.vue" />
+        <option value="$PROJECT_DIR$/frontend/src/components/Gates.vue" />
+        <option value="$PROJECT_DIR$/frontend/src/components/Cards.vue" />
+        <option value="$PROJECT_DIR$/frontend/src/components/CardTests.vue" />
+        <option value="$PROJECT_DIR$/frontend/src/components/card_number_convertor_config.vue" />
+        <option value="$PROJECT_DIR$/frontend/src/components/ConfigClassTime.vue" />
+        <option value="$PROJECT_DIR$/frontend/src/components/ConfigIntervalTask.vue" />
+        <option value="$PROJECT_DIR$/frontend/src/components/ConfigCrontabTask.vue" />
+        <option value="$PROJECT_DIR$/frontend/src/components/ConfigOtherDatabase.vue" />
+        <option value="$PROJECT_DIR$/frontend/src/components/LastFailedUpload.vue" />
+        <option value="$PROJECT_DIR$/frontend/src/components/BackgroundTask.vue" />
+        <option value="$PROJECT_DIR$/frontend/src/components/Attendances.vue" />
+        <option value="$PROJECT_DIR$/frontend/src/config.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="415" />
-    <option name="y" value="-17" />
-    <option name="width" value="1920" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-12" />
+    <option name="y" value="5" />
+    <option name="width" value="1916" />
     <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
@@ -205,11 +202,6 @@
             <path>
               <item name="zhaji" type="b2602c69:ProjectViewProjectNode" />
               <item name="zhaji" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zhaji" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zhaji" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -306,10 +298,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1548999" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20021075" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -320,7 +311,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.324295" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.38611713" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.41323212" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -329,151 +320,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-747" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-230" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/vue.config.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/babel.config.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/.postcssrc.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/.eslintrc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/dist/img/gate.59ac3a28.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/dist/img/logo.bf36c058.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/dist/img/icons/safari-pinned-tab.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/dist/img/icons/mstile-150x150.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/dist/img/icons/msapplication-icon-144x144.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/dist/img/icons/favicon-32x32.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/dist/img/icons/favicon-16x16.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/dist/img/icons/apple-touch-icon-180x180.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/dist/img/icons/apple-touch-icon-152x152.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/dist/img/icons/apple-touch-icon-120x120.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/dist/img/icons/apple-touch-icon-76x76.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/dist/img/icons/apple-touch-icon-60x60.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/dist/img/icons/apple-touch-icon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/dist/img/icons/android-chrome-512x512.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/dist/img/icons/android-chrome-192x192.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/dist/favicon.ico">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/assets/logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/assets/gate.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/nginx.conf">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/Gate.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/Gates.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4161">
-          <caret line="219" column="27" selection-start-line="219" selection-start-column="27" selection-end-line="219" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2052" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/sources.list">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/mod_gate/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11837">
-          <caret line="626" selection-start-line="626" selection-end-line="641" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/mod_task/tasks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/f5c004b3be6ad31ad0fc108141143eb7.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1394" selection-start-column="1394" selection-end-column="1394" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/run_pro.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/test_clin.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/Dockerfile-debug">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -490,17 +336,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/Cards.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8170">
-          <caret line="430" column="28" selection-start-line="430" selection-start-column="14" selection-end-line="430" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.debug.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/mod_gate/routers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4427">
+          <caret line="264" selection-start-line="264" selection-end-line="264" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#9144#18991#0" />
+            <element signature="e#21306#21445#0" />
+            <element signature="e#21529#23968#0" />
+            <element signature="e#24045#24160#0" />
+            <element signature="e#24236#24531#0" />
+            <element signature="e#24613#24778#0" />
+            <element signature="e#24870#25982#0" />
+            <element signature="e#26061#29693#0" />
+            <element signature="e#29794#30387#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1501">
+          <caret line="79" column="6" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/.dockerignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="18" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -516,16 +391,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="722">
             <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="38">
-            <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
           </first_editor>
           <second_editor />
         </state>
@@ -548,49 +413,253 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/mod_gate/routers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="264" selection-start-line="264" selection-end-line="264" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#9144#18991#0" />
-            <element signature="e#21306#21445#0" />
-            <element signature="e#21529#23968#0" />
-            <element signature="e#24045#24160#0" />
-            <element signature="e#24236#24531#0" />
-            <element signature="e#24613#24778#0" />
-            <element signature="e#24870#25982#0" />
-            <element signature="e#26061#29693#0" />
-            <element signature="e#29794#30387#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/.dockerignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="18" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="79" column="6" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/run_pro.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        <state relative-caret-position="625">
+          <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/Header.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/67afe15f1beb319b4e4e7029d1e04a0d.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4703" selection-start-column="4703" selection-end-column="4703" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/real_time_data.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/a8f31b95395064cd00cbcac06a1dec65.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1428" selection-start-column="1428" selection-end-column="1428" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/ConfigSystemConfig.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2128">
+          <caret line="112" column="37" selection-start-line="112" selection-start-column="37" selection-end-line="112" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/Index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/Login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/Config.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="716">
+          <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/node_modules/bootstrap-vue/src/components/table/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="3093">
+            <caret line="994" column="66" selection-start-line="994" selection-start-column="66" selection-end-line="994" selection-end-column="66" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/node_modules/webpack-dev-server/client/index.bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret column="119621" selection-start-column="119621" selection-end-column="119621" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/dist/js/chunk-vendors.eee8a799.js.map">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret column="1303609" selection-start-column="1303609" selection-end-column="1303609" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/CardCreate.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="113" column="91" selection-start-line="113" selection-start-column="91" selection-end-line="113" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/CardTests.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/88e6eb27b4ff8ed687ac7c5712ae3d03.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2248" selection-start-column="2248" selection-end-column="2248" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/Gates.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/card_number_convertor_config.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/dist/js/app.203caefe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/Cards.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6232">
+          <caret line="328" column="34" selection-start-line="328" selection-start-column="34" selection-end-line="328" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/ConfigUpdateCardsFromOtherDatabase.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2185">
+          <caret line="115" column="60" selection-start-line="115" selection-start-column="60" selection-end-line="115" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/ConfigClassTime.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="57" column="58" selection-start-line="57" selection-start-column="58" selection-end-line="57" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/ConfigIntervalTask.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2755">
+          <caret line="145" column="28" selection-start-line="145" selection-start-column="28" selection-end-line="145" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/ConfigCrontabTask.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/ConfigOtherDatabase.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1311">
+          <caret line="69" column="6" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/LastFailedUpload.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/BackgroundTask.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/About.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/Attendances.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="100" column="35" selection-start-line="100" selection-start-column="35" selection-end-line="100" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/Footer.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/main.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/registerServiceWorker.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/router.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/store.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/vue.config.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/nginx.conf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/Gate.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="171">
+            <caret line="9" column="11" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

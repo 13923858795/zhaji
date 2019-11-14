@@ -3,8 +3,8 @@
     <table class="table table-striped">
       <tr>
         <td>#</td>
-        <td>实例</td>
-        <td>错误</td>
+        <td>Example</td>
+        <td>ERROR</td>
       </tr>
 
       <tr v-for="(error, index) in getLastFailedUpload" v-bind:key="index">

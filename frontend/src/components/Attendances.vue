@@ -7,7 +7,7 @@
           type="datetime"
           input-class="form-control"
           format="yyyy-MM-dd HH:mm"
-          :phrases="{ok: '确定', cancel: '取消'}"
+          :phrases="{ok: 'OK', cancel: 'CANCEL'}"
           :minute-step="10"
         ></datetime>
 
@@ -17,16 +17,16 @@
           type="datetime"
           input-class="form-control"
           format="yyyy-MM-dd HH:mm"
-          :phrases="{ok: '确定', cancel: '取消'}"
+          :phrases="{ok: 'OK', cancel: 'CANCEL'}"
           :minute-step="10"
         ></datetime>
         <label class="col-sm-4 text-center search-space"></label>
         <select class="form-control col-sm-3">
-          <option value>全部状态</option>
-          <option value>状态1</option>
-          <option value>状态2</option>
-          <option value>状态3</option>
-          <option value>状态4</option>
+          <option value>All States</option>
+          <option value>States1</option>
+          <option value>States2</option>
+          <option value>States3</option>
+          <option value>States4</option>
         </select>
       </div>
       <div class="w-100">
@@ -48,7 +48,7 @@
     </div>
     <div class="row btn-row">
       <p class="w-100 text-right">
-        <button type="button" class="btn btn-secondary btn-row-btn btn-sm" title="email发送测试">
+        <button type="button" class="btn btn-secondary btn-row-btn btn-sm" title="email Send test">
           <font-awesome-icon icon="envelope"/>
         </button>
       </p>
@@ -57,22 +57,22 @@
       <table class="table table-striped table-responsive-md">
         <thead>
           <tr>
-            <th scope="col">姓名</th>
-            <th scope="col">工号</th>
-            <th scope="col">卡号</th>
-            <th scope="col">卡类型</th>
-            <th scope="col">部门</th>
-            <th scope="col">修改</th>
-            <th scope="col">删除</th>
+            <th scope="col">Name</th>
+            <th scope="col">Job number</th>
+            <th scope="col">Card number</th>
+            <th scope="col">Card type</th>
+            <th scope="col">Department</th>
+            <th scope="col">Modify</th>
+            <th scope="col">Delete</th>
           </tr>
         </thead>
         <tbody>
           <tr v-for="card in 25" :key="card">
-            <td>姓名1</td>
+            <td>Name</td>
             <td>12938475</td>
             <td>384758692747387</td>
-            <td>卡类型1</td>
-            <td>部门1</td>
+            <td>Card type 1</td>
+            <td>Department 1</td>
             <td>
               <button type="button" class="btn btn-secondary btn-quatek btn-sm">
                 <font-awesome-icon icon="pencil-alt"/>
@@ -94,11 +94,11 @@
             <span aria-hidden="true">
               <font-awesome-icon icon="caret-square-left"/>
             </span>
-            <span class="sr-only">上一页</span>
+            <span class="sr-only">Previous page</span>
           </a>
         </li>
         <li class="page-item disabled">
-          <a class="page-link">第 {{currentPage}} 页</a>
+          <a class="page-link">this {{currentPage}} page</a>
         </li>
 
         <li class="page-item">
@@ -106,7 +106,7 @@
             <span aria-hidden="true">
               <font-awesome-icon icon="caret-square-right"/>
             </span>
-            <span class="sr-only">下一页</span>
+            <span class="sr-only">next page</span>
           </a>
         </li>
       </ul>

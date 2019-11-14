@@ -6,7 +6,7 @@
           type="text"
           id="inputEmail"
           class="form-control"
-          placeholder="用户名"
+          placeholder="Username"
           autofocus
           v-model="username"
         >
@@ -15,7 +15,7 @@
           type="password"
           id="inputPassword"
           class="form-control"
-          placeholder="密码"
+          placeholder="password"
           v-model="password"
         >
         <br>
@@ -23,7 +23,7 @@
           class="btn btn-lg btn-success btn-block btn-signin btn-quatek"
           @click.stop.prevent="login({username: username, password: password})"
           type="submit"
-        >登入</button>
+        >Login</button>
       </form>
       <!-- /form -->
     </div>

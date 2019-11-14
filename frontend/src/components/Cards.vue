@@ -8,7 +8,7 @@
           aria-label="Search string"
           aria-describedby="basic-addon2"
           v-model.trim="query_string"
-          placeholder="可搜索卡号, 卡类别, 姓名, 工号和部门"
+          placeholder="Search for Card number\Card category\Name\Job number"
         >
         <input
           type="text"
@@ -16,7 +16,7 @@
           aria-label="Search string"
           aria-describedby="basic-addon2"
           v-model.trim="hid_number"
-          placeholder="HID 卡号"
+          placeholder="Searce for HID card number"
         >
         <div class="input-group-append">
           <button
@@ -34,7 +34,7 @@
         <button
           type="button"
           class="btn btn-secondary btn-row-btn btn-sm"
-          title="上传"
+          title="Upload"
           @click="upload_show()"
         >
           <font-awesome-icon icon="upload"/>
@@ -42,7 +42,7 @@
         <button
           type="button"
           class="btn btn-secondary btn-row-btn btn-sm"
-          title="下载"
+          title="Download"
           @click="download_excel()"
         >
           <font-awesome-icon icon="download"/>
@@ -50,7 +50,7 @@
         <button
           type="button"
           class="btn btn-secondary btn-row-btn btn-sm"
-          title="添加卡片"
+          title="Add card"
           @click="cardAdd()"
         >
           <font-awesome-icon icon="user-plus"/>
@@ -59,10 +59,10 @@
          <button
           type="button"
           class="btn btn-secondary btn-row-btn btn-sm"
-          title="添加卡片"
+          title="Add card"
           @click="delete_many()"
         >
-          删除当前页数据
+          Delete all data in this page
         </button>
 
 
@@ -76,15 +76,15 @@
       <table class="table table-striped table-responsive-md">
         <thead>
           <tr>
-            <th scope="col">姓名</th>
-            <th scope="col">工号</th>
-            <th scope="col">卡号</th>
-            <th scope="col">卡类型</th>
-            <th scope="col">部门</th>
-            <th scope="col">班别</th>
-            <th scope="col">HID卡号</th>
-            <th scope="col">修改</th>
-            <th scope="col">删除</th>
+            <th scope="col">Name</th>
+            <th scope="col">Job number</th>
+            <th scope="col">Card number</th>
+            <th scope="col">Card category</th>
+            <th scope="col">Department</th>
+            <th scope="col">Class</th>
+            <th scope="col">HID card number</th>
+            <th scope="col">Modify</th>
+            <th scope="col">Delete</th>
           </tr>
         </thead>
         <tbody>
@@ -123,24 +123,24 @@
         <li class="page-item" :class="{disabled: currentPage<=1}">
           <a class="page-link" href="#" aria-label="Previous" @click="prevPage()">
             <span aria-hidden="true">&laquo;</span>
-            <span class="sr-only">上一页</span>
+            <span class="sr-only">Previous page</span>
           </a>
         </li>
         <li class="page-item disabled">
-          <a class="page-link">第 {{currentPage}} 页</a>
+          <a class="page-link">the {{currentPage}} pages</a>
         </li>
 
         <li class="page-item">
           <a class="page-link" href="#" aria-label="Next" @click="nextPage()">
             <span aria-hidden="true">&raquo;</span>
-            <span class="sr-only">下一页</span>
+            <span class="sr-only">Next page</span>
           </a>
         </li>
       </ul>
     </nav>
     <b-modal
       v-model="show_modal"
-      title="上传卡片信息"
+      title="Upload cards"
       ok-only
       ok-title="上传"
       :lazy="true"
@@ -164,7 +164,7 @@
 
     <b-modal
       v-model="show_modal2"
-      title="上传卡片信息"
+      title="Upload cards"
       ok-only
       ok-title="查看详情"
       :lazy="true"
@@ -207,11 +207,11 @@ export default {
         if (card.card_category === "0") {
           card.card_category = "vip";
         } else if (card.card_category === "1") {
-          card.card_category = "只测手";
+          card.card_category = "Wrist strap";
         } else if (card.card_category === "2") {
-          card.card_category = "只测脚";
+          card.card_category = "Shoes";
         } else if (card.card_category === "3") {
-          card.card_category = "手脚都测";
+          card.card_category = "Wrist strap and Shoes";
         }
         if (card.classes) {
           card.classes = card.classes.toString();
@@ -316,17 +316,17 @@ export default {
                   .delete(`cards?delete_array=${delete_array}`)
                   .then(response => {
                     console.log(response);
-                    alert("删除成功!");
+                    alert("Delete successful!");
                     this.nowPage();
                   })
                   .catch(response => {
                     console.log(response);
-                    alert("无法删除!");
+                    alert("Cannot delete!");
                   });
               } else if (delete_confirmed === null) {
                 console.log("canceled");
               } else {
-                alert("输入错误");
+                alert("Input error");
               }
     },
 
@@ -368,7 +368,7 @@ export default {
             this.cards = response.data;
             this.currentPage++;
           } else {
-            alert("已经到达最后一页!");
+            alert("Last page reached!!");
           }
         })
         .catch(response => {

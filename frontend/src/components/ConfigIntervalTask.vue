@@ -1,44 +1,44 @@
 <template>
   <div>
     <form class="form-inline">
-      <label class="sr-only" for="task">任务</label>
+      <label class="sr-only" for="task">Task</label>
       <select
         name="task"
         id="task"
         class="custom-select mb-2 mr-sm-2"
         v-model="interval_task.task"
       >
-        <option value>------请选择任务------</option>
+        <option value>------Task selection------</option>
         <option value="app.mod_task.tasks.send_email_of_logs:"
-          >任务: 发送所有班别报告</option
+          >Task: Send all reports</option
         >
         <option value="app.mod_task.tasks.get_logs_from_mc_task"
-          >任务: 从闸机获取Logs</option
+          >Task:Get logs from gates</option
         >
         <option value="app.mod_task.tasks.save_to_other_database"
-          >任务: 保存到其他数据库</option
+          >Task: Save to another</option
         >
         <option value="app.mod_task.tasks.update_cards_from_other_database"
-          >任务: 卡号同步</option
+          >Task: Card number synchronization</option
         >
       </select>
 
       <label class="sr-only" for="every"
-        >每{{ interval_task.every }}秒运行一次</label
+        >Run every {{ interval_task.every }} seconds</label
       >
       <div class="input-group mb-2 mr-sm-2">
         <div class="input-group-prepend">
-          <div class="input-group-text">每</div>
+          <div class="input-group-text">every </div>
         </div>
         <input
           type="text"
           class="form-control"
           id="every"
           v-model="interval_task.every"
-          placeholder="每?秒运行一次"
+          placeholder="Run every ? seconds"
         />
         <div class="input-group-append">
-          <div class="input-group-text">秒运行一次</div>
+          <div class="input-group-text">Run every ? seconds</div>
         </div>
       </div>
 
@@ -47,7 +47,7 @@
         class="btn btn-success mb-2 btn_quatek"
         @click.prevent.stop="submit()"
       >
-        添加
+        Add
       </button>
     </form>
     <br />
@@ -56,15 +56,15 @@
         <table class="table table-striped table-responsive-md">
           <thead>
             <tr>
-              <th scope="col">任务</th>
-              <th scope="col">运行间隔</th>
-              <th scope="col">删除</th>
+              <th scope="col">Task</th>
+              <th scope="col">Running interval</th>
+              <th scope="col">DELETE</th>
             </tr>
           </thead>
 
           <tbody v-if="!tasks.length">
             <tr>
-              <td colspan="3" class="text-center">没有找到任务</td>
+              <td colspan="3" class="text-center">Task not found</td>
             </tr>
           </tbody>
 
@@ -140,7 +140,7 @@ export default {
                 console.log(response)
               })
           } else {
-            alert('当前任务已经存在, 请勿重复添加!')
+            alert('The current task already exists. Please do not add it again!')
           }
         })
         .catch(response => {

@@ -8,15 +8,15 @@
 
     <b-collapse is-nav id="nav_collapse">
       <b-navbar-nav>
-        <b-nav-item :to="{name: 'Index'}" exact>首页</b-nav-item>
-        <b-nav-item :to="{name: 'Gates'}" v-if="is_authenticated">闸机列表</b-nav-item>
-        <b-nav-item :to="{name: 'Cards'}" v-if="is_authenticated">卡片管理</b-nav-item>
-        <b-nav-item :to="{name: 'CardTests'}">静电测试</b-nav-item>
-        <b-nav-item :to="{name: 'real_time_data'}">实时数据</b-nav-item>
+        <b-nav-item :to="{name: 'Index'}" exact>Home Page</b-nav-item>
+        <b-nav-item :to="{name: 'Gates'}" v-if="is_authenticated">Gate List</b-nav-item>
+        <b-nav-item :to="{name: 'Cards'}" v-if="is_authenticated">Card Management</b-nav-item>
+        <b-nav-item :to="{name: 'CardTests'}">ESD test</b-nav-item>
+        <b-nav-item :to="{name: 'real_time_data'}">Real-time data</b-nav-item>
         <!-- <b-nav-item :to="{name: 'Attendances'}">考勤管理</b-nav-item> -->
         <!-- <b-nav-item :to="{name: 'Analysis'}" v-if="is_authenticated">数据统计</b-nav-item> -->
-        <b-nav-item :to="{name: 'Config'}" v-if="is_authenticated">设置</b-nav-item>
-        <!-- <b-nav-item href="#">帮助</b-nav-item> -->
+        <b-nav-item :to="{name: 'Config'}" v-if="is_authenticated">Setting</b-nav-item>
+        <!-- <b-nav-item href="#">Help</b-nav-item> -->
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->
@@ -34,11 +34,11 @@
         <b-nav-item-dropdown right>
           <!-- Using button-content slot -->
           <template slot="button-content">
-            <em>我的</em>
+            <em>My</em>
           </template>
           <!-- <b-dropdown-item href="#">Profile</b-dropdown-item> -->
-          <b-dropdown-item :to="{name: 'login'}" v-if="!is_authenticated">登入</b-dropdown-item>
-          <b-dropdown-item @click.stop.prevent="logout()" v-if="is_authenticated">退出</b-dropdown-item>
+          <b-dropdown-item :to="{name: 'login'}" v-if="!is_authenticated">Login</b-dropdown-item>
+          <b-dropdown-item @click.stop.prevent="logout()" v-if="is_authenticated">Log out</b-dropdown-item>
         </b-nav-item-dropdown>
       </b-navbar-nav>
     </b-collapse>

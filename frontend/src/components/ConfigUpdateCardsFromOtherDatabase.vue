@@ -1,7 +1,7 @@
 <template>
   <div class="form">
     <div class="form-group">
-      <label for="update_db_type">数据库类型</label>
+      <label for="update_db_type">Database type</label>
       <select
         name="update_db_type"
         id="update_db_type"
@@ -14,7 +14,7 @@
     </div>
 
     <div class="form-group">
-      <label for="update_db_name">数据库名称/实例名/SID</label>
+      <label for="update_db_name">Database name/Example/SID</label>
       <input
         type="text"
         class="form-control"
@@ -24,7 +24,7 @@
     </div>
 
     <div class="form-group">
-      <label for="update_db_host">数据库地址</label>
+      <label for="update_db_host">Database IP</label>
       <input
         type="text"
         class="form-control"
@@ -34,7 +34,7 @@
     </div>
 
     <div class="form-group">
-      <label for="update_db_port">数据库端口</label>
+      <label for="update_db_port">Database port</label>
       <input
         type="text"
         class="form-control"
@@ -44,7 +44,7 @@
     </div>
 
     <div class="form-group">
-      <label for="update_db_username">数据库用户名</label>
+      <label for="update_db_username">Database username</label>
       <input
         type="text"
         class="form-control"
@@ -54,7 +54,7 @@
     </div>
 
     <div class="form-group">
-      <label for="update_db_password">数据库密码</label>
+      <label for="update_db_password">Database password</label>
       <input
         type="text"
         class="form-control"
@@ -64,7 +64,7 @@
     </div>
 
     <div class="form-group">
-      <label for="update_db_table_name">数据库表名</label>
+      <label for="update_db_table_name">Database Table</label>
       <input
         type="text"
         class="form-control"
@@ -80,7 +80,7 @@
       class="btn btn-success btn-quatek"
       @click.prevent.stop="submit()"
     >
-      确定
+      OK
     </button>
 
     <button
@@ -88,7 +88,7 @@
       class="btn btn-success btn-quatek"
       @click.prevent.stop="sync()"
     >
-      手动同步
+      Manual synchronization
     </button>
   </div>
 </template>
@@ -116,11 +116,11 @@ export default {
         .post('/update-update-database-config', this.config)
         .then(response => {
           console.log(response.data)
-          alert('保存成功!')
+          alert('Save successfully!')
         })
         .catch(response => {
           console.log(response)
-          alert('保存失败!')
+          alert('Save failed!')
         })
     },
     sync() {
@@ -128,11 +128,11 @@ export default {
         .post('/manual-update-database')
         .then(response => {
           console.log(response.data)
-          alert('收到同步指令!')
+          alert('Receive synchronization instruction!')
         })
         .catch(response => {
           console.log(response)
-          alert('同步指令失败!')
+          alert('Synchronization instruction failed!')
         })
     },
 

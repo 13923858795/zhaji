@@ -3,18 +3,18 @@
     <table class="table">
       <tr>
         <td>Log ID</td>
-        <td>卡片号码</td>
-        <td>姓名</td>
-        <td>工号</td>
-        <td>卡片分类</td>
-        <td>进出标志</td>
+        <td>Card number</td>
+        <td>Name</td>
+        <td>Job number</td>
+        <td>Card category</td>
+        <td>In/Out</td>
         <td>MC ID</td>
-        <td>测试时间</td>
-        <td>测试结果</td>
-        <td>是否测试</td>
-        <td>手测试值</td>
-        <td>左脚测试值</td>
-        <td>右脚测试值</td>
+        <td>Time</td>
+        <td>Teat result</td>
+        <td>Whether to test</td>
+        <td>Wrist strap data</td>
+        <td>Left shoes data</td>
+        <td>Right shoes data</td>
       </tr>
       <tr v-for="log in get_logs" :key="log.log_id">
         <td>{{log.log_id}}</td>

@@ -5,7 +5,7 @@
       class="btn btn-success btn-block btn-quatek"
       :disabled="is_button_disabled"
       @click.prevent.stop="delete_all_cards()"
-    >删除闸机上卡片信息</button>
+    >Delete card information on the gate</button>
     <br>
     <br>
 
@@ -14,7 +14,7 @@
       class="btn btn-success btn-block btn-quatek"
       :disabled="is_button_disabled"
       @click.prevent.stop="sync_cards()"
-    >同步卡片信息</button>
+    >Synchronize card information</button>
   </div>
 </template>
 

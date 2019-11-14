@@ -1,7 +1,7 @@
 <template>
   <div class="form">
     <div class="form-group">
-      <label for="db_type">数据库类型</label>
+      <label for="db_type">Database type</label>
       <select name="db_type" id="db_type" class="form-control" v-model="config.db_type">
         <option value>------------</option>
         <option value="oracle">Oracle</option>
@@ -9,33 +9,33 @@
     </div>
 
     <div class="form-group">
-      <label for="db_name">数据库名称</label>
+      <label for="db_name">Database name</label>
       <input type="text" class="form-control" id="db_name" v-model="config.db_name">
     </div>
 
     <div class="form-group">
-      <label for="db_host">数据库地址</label>
+      <label for="db_host">Database IP</label>
       <input type="text" class="form-control" id="db_host" v-model="config.db_host">
     </div>
 
     <div class="form-group">
-      <label for="db_port">数据库端口</label>
+      <label for="db_port">Database port</label>
       <input type="text" class="form-control" id="db_port" v-model="config.db_port">
     </div>
 
     <div class="form-group">
-      <label for="db_username">数据库用户名</label>
+      <label for="db_username">Database username</label>
       <input type="text" class="form-control" id="db_username" v-model="config.db_username">
     </div>
 
     <div class="form-group">
-      <label for="db_password">数据库密码</label>
+      <label for="db_password">Database password</label>
       <input type="text" class="form-control" id="db_password" v-model="config.db_password">
     </div>
 
     <hr>
 
-    <button type="button" class="btn btn-success btn-quatek" @click.prevent.stop="submit()">确定</button>
+    <button type="button" class="btn btn-success btn-quatek" @click.prevent.stop="submit()">OK</button>
   </div>
 </template>
 
@@ -61,11 +61,11 @@ export default {
         .post("/update-other-database-config", this.config)
         .then(response => {
           console.log(response.data);
-          alert("保存成功!");
+          alert("Save successfully!");
         })
         .catch(response => {
           console.log(response);
-          alert("保存失败!");
+          alert("Save failed!");
         });
     },
 

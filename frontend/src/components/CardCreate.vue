@@ -2,21 +2,21 @@
   <div class="container">
     <form class="card-create-form">
       <div class="form-group row">
-        <label for="cardNumber" class="col-sm-2 col-form-label">卡号 *</label>
+        <label for="cardNumber" class="col-sm-2 col-form-label">Card number *</label>
         <div class="col-sm-10">
           <input type="text" class="form-control" id="cardNumber" v-model="card.card_number">
         </div>
       </div>
 
       <div class="form-group row">
-        <label for="hid_number" class="col-sm-2 col-form-label">HID 卡号</label>
+        <label for="hid_number" class="col-sm-2 col-form-label">HID card number *</label>
         <div class="col-sm-10">
           <input type="text" class="form-control" id="hid_number" v-model="card.hid_number">
         </div>
       </div>
 
       <div class="form-group row">
-        <label for="card_category" class="col-sm-2 col-form-label">卡类别 *</label>
+        <label for="card_category" class="col-sm-2 col-form-label">Card category *</label>
         <div class="col-sm-10">
           <select class="form-control" id="card_category" v-model="card.card_category">
             <option value="0">VIP</option>
@@ -28,28 +28,28 @@
       </div>
 
       <div class="form-group row">
-        <label for="name" class="col-sm-2 col-form-label">姓名 *</label>
+        <label for="name" class="col-sm-2 col-form-label">Name *</label>
         <div class="col-sm-10">
           <input type="text" class="form-control" id="name" v-model="card.name">
         </div>
       </div>
 
       <div class="form-group row">
-        <label for="job_number" class="col-sm-2 col-form-label">工号 *</label>
+        <label for="job_number" class="col-sm-2 col-form-label">Job number *</label>
         <div class="col-sm-10">
           <input type="text" class="form-control" id="job_number" v-model="card.job_number">
         </div>
       </div>
 
       <div class="form-group row">
-        <label for="department" class="col-sm-2 col-form-label">部门 *</label>
+        <label for="department" class="col-sm-2 col-form-label">Department *</label>
         <div class="col-sm-10">
           <input type="text" class="form-control" id="department" v-model="card.department">
         </div>
       </div>
 
       <div class="form-group row">
-        <label for="gender" class="col-sm-2 col-form-label">性别 *</label>
+        <label for="gender" class="col-sm-2 col-form-label">Gender *</label>
         <div class="col-sm-10">
           <select class="form-control" id="gender" v-model="card.gender">
             <option value="0">女</option>
@@ -59,21 +59,21 @@
       </div>
 
       <div class="form-group row">
-        <label for="classes" class="col-sm-2 col-form-label">班别</label>
+        <label for="classes" class="col-sm-2 col-form-label">Class</label>
         <div class="col-sm-10">
           <input type="text" class="form-control" id="classes" v-model="card.classes">
         </div>
       </div>
 
       <div class="form-group row">
-        <label for="note" class="col-sm-2 col-form-label">备注</label>
+        <label for="note" class="col-sm-2 col-form-label">Note</label>
         <div class="col-sm-10">
           <input type="text" class="form-control" id="note" v-model="card.note">
         </div>
       </div>
 
       <div class="form-group row">
-        <label for="belong_to_mc" class="col-sm-2 col-form-label">对应闸机&权限</label>
+        <label for="belong_to_mc" class="col-sm-2 col-form-label">Gate permission</label>
         <div class="col-sm-10">
           <input
             type="text"
@@ -85,7 +85,7 @@
           >
           <small
             class="form-text text-muted"
-          >format: "gate_1:0|gate_2:1|gate_3:3"; 其中gate_1, gate_2, gate_3: 闸机名, 0:可进可出, 1:禁止进入/可出, 2:禁止出去/可进, 3:禁止进出; "all"/留空 代表所有闸机都可进可出</small>
+          >format: "gate_1:0|gate_2:1|gate_3:3"; 0：Allow access,1: No entry/exit allowed,2: No exit/entry allowed,3: Banned in and out. </small>
         </div>
       </div>
 
@@ -96,28 +96,28 @@
             class="btn btn-success btn-block submit-btn"
             @click.prevent="submit()"
             :disabled="submit_is_disabled"
-          >保存</button>
+          >OK</button>
         </div>
       </div>
     </form>
 
     <b-modal
       v-model="show_modal"
-      title="对应闸机&权限"
+      title="Gate permission"
       ok-only
-      ok-title="确定"
+      ok-title="OK"
       :lazy="true"
       @ok="confirm()"
       ok-variant="success"
     >
       <b-container fluid class="form-inline">
         <b-row v-for="(gate,index) in computed_rights" :key="gate.gate_name" class="w-100">
-          <label :for="'gate_'+index" class="col-6">{{index+1}} - 闸机名: {{gate.gate_name}}</label>
+          <label :for="'gate_'+index" class="col-6">{{index+1}} - Gate name: {{gate.gate_name}}</label>
           <select :id=" 'gate_'+index" class="form-control col-6" v-model="gate.rights">
-            <option value="0">可进可出</option>
-            <option value="1">禁止进入/可出</option>
-            <option value="2">禁止出去/可进</option>
-            <option value="3">禁止进出</option>
+            <option value="0">Allow access</option>
+            <option value="1">No entry/exit allowed</option>
+            <option value="2">No exit/entry allowed</option>
+            <option value="3">Banned in and out</option>
           </select>
           <hr class="w-100">
         </b-row>

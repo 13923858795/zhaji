@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <p class="text-center">ESD 检测门禁系统</p>
+    <p class="text-center">ESD Gate System</p>
   </div>
 </template>
 

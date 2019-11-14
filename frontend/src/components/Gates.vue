@@ -8,7 +8,7 @@
           class="form-control"
           aria-label="Search string"
           aria-describedby="basic-addon2"
-          placeholder="可搜索门禁类别"
+          placeholder="Search for Gate category/Gate name"
         >
         <div class="input-group-append">
           <button
@@ -27,7 +27,7 @@
         <button
           type="button"
           class="btn btn-secondary btn-row-btn btn-sm"
-          title="上传"
+          title="Upload"
           @click="upload_show()"
         >
           <font-awesome-icon icon="upload"/>
@@ -35,7 +35,7 @@
         <button
           type="button"
           class="btn btn-secondary btn-row-btn btn-sm"
-          title="导出"
+          title="Export"
           @click="download_csv()"
         >
           <font-awesome-icon icon="download"/>
@@ -45,7 +45,7 @@
 
     <hr v-if="gates.length">
     <div v-if="!gates.length" class="row">
-      <p class="w-100 text-center no-result">没有搜索到结果</p>
+      <p class="w-100 text-center no-result">No results found</p>
     </div>
     <div v-if="gates.length" class="row">
       <AppGate v-for="gate in gates" :gate="gate" :key="gate._id.$oid"/>
@@ -55,17 +55,17 @@
         <li :class="{disabled: currentPage<=1}" class="page-item">
           <a class="page-link" href="#" aria-label="Previous" @click="prevPage()">
             <span aria-hidden="true">&laquo;</span>
-            <span class="sr-only">上一页</span>
+            <span class="sr-only">Previous page</span>
           </a>
         </li>
         <li class="page-item disabled">
-          <a class="page-link">第 {{ currentPage }} 页</a>
+          <a class="page-link">the {{ currentPage }} page</a>
         </li>
 
         <li class="page-item">
           <a class="page-link" href="#" aria-label="Next" @click="nextPage()">
             <span aria-hidden="true">&raquo;</span>
-            <span class="sr-only">下一页</span>
+            <span class="sr-only">next page</span>
           </a>
         </li>
       </ul>
@@ -73,9 +73,9 @@
     <b-modal
       v-model="show_modal"
       :lazy="true"
-      title="上传闸机信息"
+      title="Upload gates"
       ok-only
-      ok-title="上传"
+      ok-title="Upload"
       ok-variant="success"
       @ok="upload2()"
     >
@@ -85,7 +85,7 @@
             class="template_download"
             href
             @click.prevent="download_gates_upload_template2()"
-          >闸机上传模版.xlsx</a>
+          >Upload template(Gate).xlsx</a>
         </b-row>
         <br>
         <b-row>
@@ -97,7 +97,7 @@
     <b-modal
       v-model="show_modal2"
       :lazy="true"
-      title="上传闸机信息"
+      title="Upload gates"
       ok-only
       ok-title="查看详情"
       ok-variant="success"
@@ -223,7 +223,7 @@ export default {
             this.gates = response.data;
             this.currentPage++;
           } else {
-            alert("已经到达最后一页!");
+            alert("Last page reached!!");
           }
         })
         .catch(response => {

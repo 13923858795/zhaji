@@ -1,13 +1,13 @@
 <template>
   <div>
     <div>
-      <label>1. HID 卡号转换</label>
+      <label>1. Card number conversion tool</label>
       <br>
-      <small>请将 HID 卡号放在 Excel 文件的第一列</small>
+      <small>Please put the HID card number in the first column of the excel file</small>
       <br>
       <br>
       <input type="file" name="hid_excel_file" id="hid_excel_file" ref="hid_excel_file">
-      <button @click.prevent.stop="submit_hid_excel_file()">提交</button>
+      <button @click.prevent.stop="submit_hid_excel_file()">submit </button>
     </div>
   </div>
 </template>

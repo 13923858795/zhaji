@@ -32,40 +32,40 @@
             type="text"
             class="form-control"
             v-model.trim="card_number"
-            placeholder="卡号"
+            placeholder="Card number"
           >
         </div>
 
-        <label class="sr-only" for="job_number">工号</label>
+        <label class="sr-only" for="job_number">Job number</label>
         <div class="input-group mb-2 mr-sm-2">
           <input
             name="job_number"
             type="text"
             class="form-control"
             v-model.trim="job_number"
-            placeholder="工号"
+            placeholder="Job number"
           >
         </div>
 
-        <label class="sr-only" for="department">部门</label>
+        <label class="sr-only" for="department">Department</label>
         <div class="input-group mb-2 mr-sm-2">
           <input
             name="department"
             type="text"
             class="form-control"
             v-model.trim="department"
-            placeholder="部门"
+            placeholder="Department"
           >
         </div>
 
-        <label class="sr-only" for="hid_number">HID卡号</label>
+        <label class="sr-only" for="hid_number">HID Card Number</label>
         <div class="input-group mb-2 mr-sm-2">
           <input
             name="hid_number"
             type="text"
             class="form-control"
             v-model.trim="hid_number"
-            placeholder="HID卡号"
+            placeholder="HID Card Number"
           >
         </div>
       </div>
@@ -75,30 +75,30 @@
       </div>
 
       <div class="form-inline">
-        <label class="sr-only" for="department">姓名</label>
+        <label class="sr-only" for="department">Name</label>
         <div class="input-group mb-2 mr-sm-2">
-          <input name="name" type="text" class="form-control" v-model.trim="name" placeholder="姓名">
+          <input name="name" type="text" class="form-control" v-model.trim="name" placeholder="Name">
         </div>
 
-        <label class="sr-only" for="department">闸机ID</label>
+        <label class="sr-only" for="department">Gate ID</label>
         <div class="input-group mb-2 mr-sm-2">
           <input
             name="mc_id"
             type="text"
             class="form-control"
             v-model.trim="mc_id"
-            placeholder="闸机ID"
+            placeholder="Gate ID"
           >
         </div>
 
-        <label class="sr-only" for="department">卡类型</label>
+        <label class="sr-only" for="department">Card category</label>
         <div class="input-group mb-2 mr-sm-2">
-          <select name="card_cat" class="form-control" v-model.trim="card_cat" placeholder="卡类型">
+          <select name="card_cat" class="form-control" v-model.trim="card_cat" placeholder="Card category">
             <option value></option>
             <option value="0">vip</option>
-            <option value="1">只测手</option>
-            <option value="2">只测脚</option>
-            <option value="3">手脚都测</option>
+            <option value="1">Wrist strap</option>
+            <option value="2">Shoes</option>
+            <option value="3">Wrist strap and Shoes</option>
           </select>
         </div>
       </div>
@@ -107,14 +107,14 @@
         type="submit"
         class="btn btn-success mb-2 btn_quatek"
         @click.prevent.stop="search()"
-      >搜索</button>
+      >search</button>
     </div>
     <div class="row btn-row">
       <p class="w-100 text-right">
         <button
           type="button"
           class="btn btn-secondary btn-row-btn btn-sm"
-          title="下载1"
+          title="Download all data"
           @click="download_excel()"
         >
           <font-awesome-icon icon="download"/>
@@ -122,7 +122,7 @@
         <button
           type="button"
           class="btn btn-secondary btn-row-btn btn-sm"
-          title="下载2"
+          title="Download matched data"
           @click="download_excel2()"
         >
           <font-awesome-icon icon="download"/>
@@ -130,27 +130,27 @@
       </p>
     </div>
     <div class="row" v-if="!cardtests.length">
-      <p class="w-100 text-center no-result">没有搜索到结果</p>
+      <p class="w-100 text-center no-result">No results found</p>
     </div>
 
     <div class="row" v-if="cardtests.length">
       <table class="table table-striped table-responsive-md">
         <thead>
           <tr>
-            <th scope="col">姓名</th>
-            <th scope="col">工号</th>
-            <th scope="col">卡号</th>
-            <th scope="col">HID卡号</th>
-            <th scope="col">部门</th>
-            <th scope="col">测试类型</th>
-            <th scope="col">进出标志</th>
-            <th scope="col">闸机id</th>
-            <th scope="col">测试时间</th>
-            <th scope="col">是否通过</th>
-            <th scope="col">是否测试</th>
-            <th scope="col">手腕检测值(KΩ)</th>
-            <th scope="col">左脚检测值(KΩ)</th>
-            <th scope="col">右脚检测值(KΩ)</th>
+            <th scope="col">Name</th>
+            <th scope="col">Job number</th>
+            <th scope="col">Card number</th>
+            <th scope="col">HID card number</th>
+            <th scope="col">Department</th>
+            <th scope="col">Card category</th>
+            <th scope="col">In/Out</th>
+            <th scope="col">Gate ID</th>
+            <th scope="col">Time</th>
+            <th scope="col">Pass or fail</th>
+            <th scope="col">Test or no</th>
+            <th scope="col">Wrist Strap Dat(KΩ)</th>
+            <th scope="col">Left Shoe Data(KΩ)</th>
+            <th scope="col">Right Shoe Data(KΩ)</th>
           </tr>
         </thead>
         <tbody>
@@ -178,17 +178,17 @@
         <li class="page-item" :class="{disabled: currentPage<=1}">
           <a class="page-link" href="#" aria-label="Previous" @click="prevPage()">
             <span aria-hidden="true">&laquo;</span>
-            <span class="sr-only">上一页</span>
+            <span class="sr-only">previous page</span>
           </a>
         </li>
         <li class="page-item disabled">
-          <a class="page-link">第 {{currentPage}} 页</a>
+          <a class="page-link">the {{currentPage}} page</a>
         </li>
 
         <li class="page-item">
           <a class="page-link" href="#" aria-label="Next" @click="nextPage()">
             <span aria-hidden="true">&raquo;</span>
-            <span class="sr-only">下一页</span>
+            <span class="sr-only">next page</span>
           </a>
         </li>
         <li class="page-item">
@@ -273,34 +273,34 @@ export default {
             cardtest.job_number = card2[0].job_number;
             cardtest.department = card2[0].department;
           } else {
-            cardtest.name = "未找到姓名";
-            cardtest.job_number = "未找到工号";
-            cardtest.department = "未找到部门";
+            cardtest.name = "Name not found";
+            cardtest.job_number = "Job number not found";
+            cardtest.department = "Department not found";
           }
         }
         if (cardtest.test_result === "0") {
-          cardtest.test_result = "否";
+          cardtest.test_result = "NO";
         } else {
-          cardtest.test_result = "是";
+          cardtest.test_result = "OK";
         }
         if (cardtest.is_tested === "0") {
-          cardtest.is_tested = "否";
+          cardtest.is_tested = "NO";
         } else {
-          cardtest.is_tested = "是";
+          cardtest.is_tested = "OK";
         }
         if (cardtest.card_category === "0") {
           cardtest.card_category = "VIP";
         } else if (cardtest.card_category === "1") {
-          cardtest.card_category = "只测手";
+          cardtest.card_category = "Wrist strap";
         } else if (cardtest.card_category === "2") {
-          cardtest.card_category = "只测脚";
+          cardtest.card_category = "Shoes";
         } else if (cardtest.card_category === "3") {
-          cardtest.card_category = "手脚都测";
+          cardtest.card_category = "Wrist strap and Shoes";
         }
         if (cardtest.in_out_symbol === "0") {
-          cardtest.in_out_symbol = "出";
+          cardtest.in_out_symbol = "Out";
         } else if (cardtest.in_out_symbol === "1") {
-          cardtest.in_out_symbol = "进";
+          cardtest.in_out_symbol = "enter";
         }
       }
       console.log(computed_cardtests);
@@ -381,7 +381,7 @@ export default {
             this.cardtests = response.data;
             this.currentPage++;
           } else {
-            alert("已经到达最后一页!");
+            alert("Last page reached!");
           }
         })
         .catch(response => {
@@ -399,7 +399,7 @@ export default {
             console.log(response.data);
             this.cardtests = response.data;
           } else {
-            alert("该页面不存在!");
+            alert("page not present!");
           }
         })
         .catch(response => {

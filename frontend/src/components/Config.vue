@@ -3,32 +3,32 @@
     <div class="row">
       <b-nav vertical class="col-md-2 offset-md-1 sidebar">
         <b-nav-item :to="{ name: 'system-config' }" key="system-config"
-          >Email&SMTP设置</b-nav-item
+          >Email and SMTP</b-nav-item
         >
         <b-nav-item :to="{ name: 'other-database' }" key="other-database"
-          >其他数据库</b-nav-item
+          >Database connection</b-nav-item
         >
         <b-nav-item :to="{ name: 'interval-task' }" key="interval-task"
-          >任务设置(按间隔)</b-nav-item
+          >Task design(According to the interval)</b-nav-item
         >
         <b-nav-item :to="{ name: 'crontab-task' }" key="crontab-task"
-          >任务设置(按日期)</b-nav-item
+          >Task design(According to the time)</b-nav-item
         >
         <b-nav-item :to="{ name: 'background-task' }" key="background-task"
-          >管理员工具</b-nav-item
+          >Administrator tools</b-nav-item
         >
         <b-nav-item :to="{ name: 'class-time-config' }" key="class-time-config"
-          >班别设置</b-nav-item
+          >Class Setting</b-nav-item
         >
         <b-nav-item
           :to="{ name: 'card_number_convertor_config' }"
           key="card_number_convertor_config"
-          >卡号转换工具</b-nav-item
+          >Card number conversion tool</b-nav-item
         >
         <b-nav-item
           :to="{ name: 'update-cards-from-other-database' }"
           key="update-cards-from-other-database"
-          >卡号同步</b-nav-item
+          >Card number synchronization</b-nav-item
         >
         <br />
       </b-nav>
