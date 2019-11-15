@@ -20,9 +20,9 @@
         <div class="col-sm-10">
           <select class="form-control" id="card_category" v-model="card.card_category">
             <option value="0">VIP</option>
-            <option value="1">只测手</option>
-            <option value="2">只测脚</option>
-            <option value="3">手脚都测</option>
+            <option value="1">Wrist Strap</option>
+            <option value="2">Shoes</option>
+            <option value="3">Wrist Strap and Shoes</option>
           </select>
         </div>
       </div>
@@ -52,8 +52,8 @@
         <label for="gender" class="col-sm-2 col-form-label">Gender *</label>
         <div class="col-sm-10">
           <select class="form-control" id="gender" v-model="card.gender">
-            <option value="0">Woman</option>
-            <option value="1">Man</option>
+            <option value="0">Female</option>
+            <option value="1">Male</option>
           </select>
         </div>
       </div>

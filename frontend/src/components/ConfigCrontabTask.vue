@@ -4,14 +4,14 @@
       <label class="sr-only" for="task">Task</label>
       <select name="task" id="task" class="custom-select mb-2 mr-sm-2" v-model="crontab_task.task">
         <option value>------Task selection------</option>
-        <option value="app.mod_task.tasks.send_email_of_logs:">Task: Send all eports</option>
+        <option value="app.mod_task.tasks.send_email_of_logs:">Task: Send all reports</option>
         <option value="app.mod_task.tasks.get_logs_from_mc_task">Task:Get logs from gates</option>
-        <option value="app.mod_task.tasks.save_to_other_database">Task: Save to another </option>
+        <option value="app.mod_task.tasks.save_to_other_database">Task: Save to other database </option>
         <option
           v-for="card_class in card_classes"
           :value="'app.mod_task.tasks.send_email_of_logs:'+card_class.name"
           :key="card_class.name"
-        >task: send{{card_class.name}}class report </option>
+        >Task: send {{card_class.name}} class report </option>
       </select>
 
       <label class="sr-only" for="minute">Minute</label>

@@ -1,7 +1,7 @@
 <template>
   <div class="form">
     <div class="form-group">
-      <label for="db_type">Database type</label>
+      <label for="db_type">Database Type</label>
       <select name="db_type" id="db_type" class="form-control" v-model="config.db_type">
         <option value>------------</option>
         <option value="oracle">Oracle</option>

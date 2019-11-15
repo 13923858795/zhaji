@@ -96,9 +96,9 @@
           <select name="card_cat" class="form-control" v-model.trim="card_cat" placeholder="Card Category">
             <option value></option>
             <option value="0">VIP</option>
-            <option value="1">Wrist strap</option>
+            <option value="1">Wrist Strap</option>
             <option value="2">Shoes</option>
-            <option value="3">Wrist strap and Shoes</option>
+            <option value="3">Wrist Strap and Shoes</option>
           </select>
         </div>
       </div>
@@ -146,7 +146,7 @@
             <th scope="col">In/Out</th>
             <th scope="col">Gate ID</th>
             <th scope="col">Time</th>
-            <th scope="col">Pass or NO</th>
+            <th scope="col">Pass or No</th>
             <th scope="col">Test or No</th>
             <th scope="col">Wrist Strap Dat(KΩ)</th>
             <th scope="col">Left Shoe Data(KΩ)</th>

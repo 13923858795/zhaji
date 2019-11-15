@@ -10,8 +10,8 @@
         <td>In/Out</td>
         <td>MC ID</td>
         <td>Time</td>
-        <td>Teat Result</td>
-        <td>Whether to Test</td>
+        <td>Pass or No</td>
+        <td>Test or No</td>
         <td>Wrist Strap Data</td>
         <td>Left Shoes Data</td>
         <td>Right Shoes Data</td>

@@ -16,7 +16,7 @@
           >Task:Get logs from gates</option
         >
         <option value="app.mod_task.tasks.save_to_other_database"
-          >Task: Save to another</option
+          >Task: Save to other database</option
         >
         <option value="app.mod_task.tasks.update_cards_from_other_database"
           >Task: Card number synchronization</option
@@ -38,7 +38,7 @@
           placeholder="Run every _ seconds"
         />
         <div class="input-group-append">
-          <div class="input-group-text">Run every _ seconds</div>
+          <div class="input-group-text">seconds to run</div>
         </div>
       </div>
 
@@ -57,8 +57,8 @@
           <thead>
             <tr>
               <th scope="col">Task</th>
-              <th scope="col">Running interval</th>
-              <th scope="col">DELETE</th>
+              <th scope="col">Running Interval</th>
+              <th scope="col">Delete</th>
             </tr>
           </thead>
 
@@ -109,7 +109,7 @@ export default {
         if (task.task.indexOf('get_logs_from_mc_task') >= 0) {
           task.task = 'Get logs from gates'
         } else if (task.task.indexOf('send_email_of_logs') >= 0) {
-          task.task = 'Send Report'
+          task.task = 'Send report'
         } else if (task.task.indexOf('save_to_other_database') >= 0) {
           task.task = 'save to other database'
         }

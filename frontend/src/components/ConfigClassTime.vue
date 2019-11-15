@@ -1,14 +1,14 @@
 <template>
   <div>
     <form class="form-inline">
-      <label class="sr-only" for="class_time_name">Class name</label>
+      <label class="sr-only" for="class_time_name">Class Name</label>
       <div class="input-group mb-2 mr-sm-2">
         <input
           type="text"
           class="form-control"
           id="class_time_name"
           v-model="class_time_name"
-          placeholder="Class name"
+          placeholder="Class Name"
         >
       </div>
 
@@ -38,7 +38,7 @@
         type="submit"
         class="btn btn-success mb-2 btn_quatek"
         @click.prevent.stop="submit()"
-      >添加</button>
+      >Add</button>
     </form>
     <br>
     <div>
@@ -46,7 +46,7 @@
         <table class="table table-striped table-responsive-md">
           <thead>
             <tr>
-              <th scope="col">Class name</th>
+              <th scope="col">Class Name</th>
               <th scope="col">Start Time</th>
               <th scope="col">End Time</th>
               <th scope="col">Delete</th>
