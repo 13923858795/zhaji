@@ -8,7 +8,7 @@
           class="form-control"
           aria-label="Search string"
           aria-describedby="basic-addon2"
-          placeholder="Search for Gate category/Gate name"
+          placeholder="Search for Gate Category/Gate Name"
         >
         <div class="input-group-append">
           <button
@@ -59,7 +59,7 @@
           </a>
         </li>
         <li class="page-item disabled">
-          <a class="page-link">the {{ currentPage }} page</a>
+          <a class="page-link">page{{ currentPage }}</a>
         </li>
 
         <li class="page-item">
@@ -73,7 +73,7 @@
     <b-modal
       v-model="show_modal"
       :lazy="true"
-      title="Upload gates"
+      title="Upload Gates"
       ok-only
       ok-title="Upload"
       ok-variant="success"
@@ -85,7 +85,7 @@
             class="template_download"
             href
             @click.prevent="download_gates_upload_template2()"
-          >Upload template(Gate).xlsx</a>
+          >Upload Template(Gate).xlsx</a>
         </b-row>
         <br>
         <b-row>
@@ -99,14 +99,14 @@
       :lazy="true"
       title="Upload gates"
       ok-only
-      ok-title="查看详情"
+      ok-title="Detail"
       ok-variant="success"
       @ok="routeToFailedUploadPage()"
     >
       <b-container fluid>
-        <b-row>{{ this.last_upload_result.result }} 台闸机上传成功</b-row>
+        <b-row>{{ this.last_upload_result.result }} Gate upload succeeded</b-row>
         <br>
-        <b-row>{{ this.last_upload_result.failed_numbers }} 台失败</b-row>
+        <b-row>{{ this.last_upload_result.failed_numbers }} Gate upload failed</b-row>
       </b-container>
     </b-modal>
   </div>

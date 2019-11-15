@@ -7,16 +7,16 @@
           type="datetime"
           input-class="form-control"
           format="yyyy-MM-dd HH:mm"
-          :phrases="{ok: '确定', cancel: '取消'}"
+          :phrases="{ok: 'OK', cancel: 'Cancel'}"
           :minute-step="10"
         ></datetime>
-        <label class="col-sm-1 text-center search-space">至</label>
+        <label class="col-sm-1 text-center search-space">to</label>
         <datetime
           v-model="datetime_to"
           type="datetime"
           input-class="form-control"
           format="yyyy-MM-dd HH:mm"
-          :phrases="{ok: '确定', cancel: '取消'}"
+          :phrases="{ok: 'OK', cancel: 'Cancel'}"
           :minute-step="10"
         ></datetime>
       </div>
@@ -32,18 +32,18 @@
             type="text"
             class="form-control"
             v-model.trim="card_number"
-            placeholder="Card number"
+            placeholder="Card Number"
           >
         </div>
 
-        <label class="sr-only" for="job_number">Job number</label>
+        <label class="sr-only" for="job_number">Job Number</label>
         <div class="input-group mb-2 mr-sm-2">
           <input
             name="job_number"
             type="text"
             class="form-control"
             v-model.trim="job_number"
-            placeholder="Job number"
+            placeholder="Job Number"
           >
         </div>
 
@@ -91,11 +91,11 @@
           >
         </div>
 
-        <label class="sr-only" for="department">Card category</label>
+        <label class="sr-only" for="department">Card Category</label>
         <div class="input-group mb-2 mr-sm-2">
-          <select name="card_cat" class="form-control" v-model.trim="card_cat" placeholder="Card category">
+          <select name="card_cat" class="form-control" v-model.trim="card_cat" placeholder="Card Category">
             <option value></option>
-            <option value="0">vip</option>
+            <option value="0">VIP</option>
             <option value="1">Wrist strap</option>
             <option value="2">Shoes</option>
             <option value="3">Wrist strap and Shoes</option>
@@ -107,7 +107,7 @@
         type="submit"
         class="btn btn-success mb-2 btn_quatek"
         @click.prevent.stop="search()"
-      >search</button>
+      >Search</button>
     </div>
     <div class="row btn-row">
       <p class="w-100 text-right">
@@ -138,16 +138,16 @@
         <thead>
           <tr>
             <th scope="col">Name</th>
-            <th scope="col">Job number</th>
-            <th scope="col">Card number</th>
-            <th scope="col">HID card number</th>
+            <th scope="col">Job Number</th>
+            <th scope="col">Card Number</th>
+            <th scope="col">HID Card Number</th>
             <th scope="col">Department</th>
-            <th scope="col">Card category</th>
+            <th scope="col">Card Category</th>
             <th scope="col">In/Out</th>
             <th scope="col">Gate ID</th>
             <th scope="col">Time</th>
-            <th scope="col">Pass or fail</th>
-            <th scope="col">Test or no</th>
+            <th scope="col">Pass or NO</th>
+            <th scope="col">Test or No</th>
             <th scope="col">Wrist Strap Dat(KΩ)</th>
             <th scope="col">Left Shoe Data(KΩ)</th>
             <th scope="col">Right Shoe Data(KΩ)</th>
@@ -182,7 +182,7 @@
           </a>
         </li>
         <li class="page-item disabled">
-          <a class="page-link">the {{currentPage}} page</a>
+          <a class="page-link">page{{currentPage}}</a>
         </li>
 
         <li class="page-item">
@@ -274,7 +274,7 @@ export default {
             cardtest.department = card2[0].department;
           } else {
             cardtest.name = "Name not found";
-            cardtest.job_number = "Job number not found";
+            cardtest.job_number = "Job Number not found";
             cardtest.department = "Department not found";
           }
         }
@@ -291,16 +291,16 @@ export default {
         if (cardtest.card_category === "0") {
           cardtest.card_category = "VIP";
         } else if (cardtest.card_category === "1") {
-          cardtest.card_category = "Wrist strap";
+          cardtest.card_category = "Wrist Strap";
         } else if (cardtest.card_category === "2") {
           cardtest.card_category = "Shoes";
         } else if (cardtest.card_category === "3") {
-          cardtest.card_category = "Wrist strap and Shoes";
+          cardtest.card_category = "Wrist Strap and Shoes";
         }
         if (cardtest.in_out_symbol === "0") {
           cardtest.in_out_symbol = "Out";
         } else if (cardtest.in_out_symbol === "1") {
-          cardtest.in_out_symbol = "enter";
+          cardtest.in_out_symbol = "In";
         }
       }
       console.log(computed_cardtests);

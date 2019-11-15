@@ -47,8 +47,8 @@
           <thead>
             <tr>
               <th scope="col">Class name</th>
-              <th scope="col">Start time</th>
-              <th scope="col">End time</th>
+              <th scope="col">Start Time</th>
+              <th scope="col">End Time</th>
               <th scope="col">Delete</th>
             </tr>
           </thead>

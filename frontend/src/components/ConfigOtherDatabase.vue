@@ -9,7 +9,7 @@
     </div>
 
     <div class="form-group">
-      <label for="db_name">Database name</label>
+      <label for="db_name">Database Name</label>
       <input type="text" class="form-control" id="db_name" v-model="config.db_name">
     </div>
 
@@ -19,17 +19,17 @@
     </div>
 
     <div class="form-group">
-      <label for="db_port">Database port</label>
+      <label for="db_port">Database Port</label>
       <input type="text" class="form-control" id="db_port" v-model="config.db_port">
     </div>
 
     <div class="form-group">
-      <label for="db_username">Database username</label>
+      <label for="db_username">Database Username</label>
       <input type="text" class="form-control" id="db_username" v-model="config.db_username">
     </div>
 
     <div class="form-group">
-      <label for="db_password">Database password</label>
+      <label for="db_password">Database Password</label>
       <input type="text" class="form-control" id="db_password" v-model="config.db_password">
     </div>
 

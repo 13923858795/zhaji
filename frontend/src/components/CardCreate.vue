@@ -2,21 +2,21 @@
   <div class="container">
     <form class="card-create-form">
       <div class="form-group row">
-        <label for="cardNumber" class="col-sm-2 col-form-label">Card number *</label>
+        <label for="cardNumber" class="col-sm-2 col-form-label">Card Number *</label>
         <div class="col-sm-10">
           <input type="text" class="form-control" id="cardNumber" v-model="card.card_number">
         </div>
       </div>
 
       <div class="form-group row">
-        <label for="hid_number" class="col-sm-2 col-form-label">HID card number *</label>
+        <label for="hid_number" class="col-sm-2 col-form-label">HID Card Number *</label>
         <div class="col-sm-10">
           <input type="text" class="form-control" id="hid_number" v-model="card.hid_number">
         </div>
       </div>
 
       <div class="form-group row">
-        <label for="card_category" class="col-sm-2 col-form-label">Card category *</label>
+        <label for="card_category" class="col-sm-2 col-form-label">Card Category *</label>
         <div class="col-sm-10">
           <select class="form-control" id="card_category" v-model="card.card_category">
             <option value="0">VIP</option>
@@ -35,7 +35,7 @@
       </div>
 
       <div class="form-group row">
-        <label for="job_number" class="col-sm-2 col-form-label">Job number *</label>
+        <label for="job_number" class="col-sm-2 col-form-label">Job Number *</label>
         <div class="col-sm-10">
           <input type="text" class="form-control" id="job_number" v-model="card.job_number">
         </div>
@@ -52,8 +52,8 @@
         <label for="gender" class="col-sm-2 col-form-label">Gender *</label>
         <div class="col-sm-10">
           <select class="form-control" id="gender" v-model="card.gender">
-            <option value="0">女</option>
-            <option value="1">男</option>
+            <option value="0">Woman</option>
+            <option value="1">Man</option>
           </select>
         </div>
       </div>
@@ -73,7 +73,7 @@
       </div>
 
       <div class="form-group row">
-        <label for="belong_to_mc" class="col-sm-2 col-form-label">Gate permission</label>
+        <label for="belong_to_mc" class="col-sm-2 col-form-label">Gate Permission</label>
         <div class="col-sm-10">
           <input
             type="text"
@@ -194,12 +194,12 @@ export default {
             .patch("/cards/create", this.card)
             .then(response => {
               console.log(response);
-              alert("保存成功!");
+              alert("Save successfully!");
               this.$router.push({ name: "Cards" });
             })
             .catch(response => {
               console.log(response);
-              alert("保存失败!");
+              alert("Save failed!");
               this.submit_is_disabled = false;
             });
         } else {
@@ -207,17 +207,17 @@ export default {
             .post("/cards/create", this.card)
             .then(response => {
               console.log(response);
-              alert("保存成功!");
+              alert("Save successfully!");
               this.$router.push({ name: "Cards" });
             })
             .catch(response => {
               console.log(response);
-              alert("保存失败!");
+              alert("Save failed!");
               this.submit_is_disabled = false;
             });
         }
       } else {
-        alert("带*的信息不能为空!");
+        alert("Information with * cannot be empty!");
         this.submit_is_disabled = false;
       }
     },

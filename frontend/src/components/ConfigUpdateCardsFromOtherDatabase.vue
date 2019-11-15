@@ -1,7 +1,7 @@
 <template>
   <div class="form">
     <div class="form-group">
-      <label for="update_db_type">Database type</label>
+      <label for="update_db_type">Database Type</label>
       <select
         name="update_db_type"
         id="update_db_type"
@@ -14,7 +14,7 @@
     </div>
 
     <div class="form-group">
-      <label for="update_db_name">Database name/Example/SID</label>
+      <label for="update_db_name">Database Name/Example/SID</label>
       <input
         type="text"
         class="form-control"
@@ -34,7 +34,7 @@
     </div>
 
     <div class="form-group">
-      <label for="update_db_port">Database port</label>
+      <label for="update_db_port">Database Port</label>
       <input
         type="text"
         class="form-control"
@@ -44,7 +44,7 @@
     </div>
 
     <div class="form-group">
-      <label for="update_db_username">Database username</label>
+      <label for="update_db_username">Database Username</label>
       <input
         type="text"
         class="form-control"
@@ -54,7 +54,7 @@
     </div>
 
     <div class="form-group">
-      <label for="update_db_password">Database password</label>
+      <label for="update_db_password">Database Password</label>
       <input
         type="text"
         class="form-control"

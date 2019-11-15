@@ -8,7 +8,7 @@
           aria-label="Search string"
           aria-describedby="basic-addon2"
           v-model.trim="query_string"
-          placeholder="Search for Card number\Card category\Name\Job number"
+          placeholder="Search for Card Number\Card Category\Name\Job Number"
         >
         <input
           type="text"
@@ -16,7 +16,7 @@
           aria-label="Search string"
           aria-describedby="basic-addon2"
           v-model.trim="hid_number"
-          placeholder="Searce for HID card number"
+          placeholder="Search for HID Card Number"
         >
         <div class="input-group-append">
           <button
@@ -77,12 +77,12 @@
         <thead>
           <tr>
             <th scope="col">Name</th>
-            <th scope="col">Job number</th>
-            <th scope="col">Card number</th>
-            <th scope="col">Card category</th>
+            <th scope="col">Job Number</th>
+            <th scope="col">Card Number</th>
+            <th scope="col">Card Category</th>
             <th scope="col">Department</th>
             <th scope="col">Class</th>
-            <th scope="col">HID card number</th>
+            <th scope="col">HID Card Number</th>
             <th scope="col">Modify</th>
             <th scope="col">Delete</th>
           </tr>
@@ -127,7 +127,7 @@
           </a>
         </li>
         <li class="page-item disabled">
-          <a class="page-link">the {{currentPage}} pages</a>
+          <a class="page-link">page {{currentPage}}</a>
         </li>
 
         <li class="page-item">
@@ -153,7 +153,7 @@
             class="template_download"
             href
             @click.prevent="download_cards_upload_template2()"
-          >卡片上传模版.xlsx</a>
+          >Upload Template(Card).xlsx</a>
         </b-row>
         <br>
         <b-row>
@@ -205,13 +205,13 @@ export default {
       let computed_cards = lodash.cloneDeep(this.cards);
       for (let card of computed_cards) {
         if (card.card_category === "0") {
-          card.card_category = "vip";
+          card.card_category = "VIP";
         } else if (card.card_category === "1") {
-          card.card_category = "Wrist strap";
+          card.card_category = "Wrist Strap";
         } else if (card.card_category === "2") {
           card.card_category = "Shoes";
         } else if (card.card_category === "3") {
-          card.card_category = "Wrist strap and Shoes";
+          card.card_category = "Wrist Strap and Shoes";
         }
         if (card.classes) {
           card.classes = card.classes.toString();
@@ -308,7 +308,7 @@ export default {
     },
 
     delete_cards(cards_array) {
-                let delete_confirmed = prompt("请输入 YES 确认删除!");
+                let delete_confirmed = prompt("Please enter YES to confirm deletion!");
                 if (delete_confirmed === "YES") {
                 let delete_array = JSON.stringify(cards_array);
                 console.log(delete_array);

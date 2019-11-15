@@ -21,12 +21,12 @@
     </div>
 
     <div class="form-group">
-      <label for="smtp_username">The usename of SMTP</label>
+      <label for="smtp_username">The Usename of SMTP</label>
       <input type="text" class="form-control" id="smtp_username" v-model="config.smtp_username">
     </div>
 
     <div class="form-group" v-show="config.smtp_need_auth">
-      <label for="smtp_password">The password of SMTP</label>
+      <label for="smtp_password">The Password of SMTP</label>
       <input type="text" class="form-control" id="smtp_password" v-model="config.smtp_password">
     </div>
 
@@ -51,20 +51,20 @@
     <hr>
 
     <div class="form-group">
-      <label for="emalis">Email for seceiving report</label>
+      <label for="emalis">Email for Receiving Report</label>
       <input type="text" class="form-control" id="emalis" v-model="config.emails">
       <small id="emailsHelp" class="form-text text-muted">Format: a@example.com,b@example.com</small>
     </div>
     <hr>
     <div class="form-group">
-      <label for="work_hours">Work time</label>
+      <label for="work_hours">Working time</label>
       <input type="text" class="form-control" id="work_hours" v-model="config.work_hours">
       <small id="work_hours_help" class="form-text text-muted">Format: 8:00-18:00</small>
     </div>
 
     <hr>
     <div class="form-group">
-      <label for="timezone">Time zone</label>
+      <label for="timezone">Time Zone</label>
       <input type="text" class="form-control" id="timezone" v-model="config.timezone">
       <small id="timezone_help" class="form-text text-muted">example: +8</small>
     </div>

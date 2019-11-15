@@ -28,17 +28,17 @@
       >
       <div class="input-group mb-2 mr-sm-2">
         <div class="input-group-prepend">
-          <div class="input-group-text">every </div>
+          <div class="input-group-text">Every </div>
         </div>
         <input
           type="text"
           class="form-control"
           id="every"
           v-model="interval_task.every"
-          placeholder="Run every ? seconds"
+          placeholder="Run every _ seconds"
         />
         <div class="input-group-append">
-          <div class="input-group-text">Run every ? seconds</div>
+          <div class="input-group-text">Run every _ seconds</div>
         </div>
       </div>
 
@@ -107,11 +107,11 @@ export default {
       let computed_tasks = lodash.cloneDeep(this.tasks)
       for (let task of computed_tasks) {
         if (task.task.indexOf('get_logs_from_mc_task') >= 0) {
-          task.task = '从闸机获取Logs'
+          task.task = 'Get logs from gates'
         } else if (task.task.indexOf('send_email_of_logs') >= 0) {
-          task.task = '发送报告'
+          task.task = 'Send Report'
         } else if (task.task.indexOf('save_to_other_database') >= 0) {
-          task.task = '保存到其他数据库'
+          task.task = 'save to other database'
         }
       }
       return computed_tasks

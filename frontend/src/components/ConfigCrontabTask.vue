@@ -4,7 +4,7 @@
       <label class="sr-only" for="task">Task</label>
       <select name="task" id="task" class="custom-select mb-2 mr-sm-2" v-model="crontab_task.task">
         <option value>------Task selection------</option>
-        <option value="app.mod_task.tasks.send_email_of_logs:">Task: Send all reports</option>
+        <option value="app.mod_task.tasks.send_email_of_logs:">Task: Send all eports</option>
         <option value="app.mod_task.tasks.get_logs_from_mc_task">Task:Get logs from gates</option>
         <option value="app.mod_task.tasks.save_to_other_database">Task: Save to another </option>
         <option
@@ -63,7 +63,7 @@
         class="custom-select mb-2 mr-sm-2"
         v-model="crontab_task.month_of_year"
       >
-        <option value="*">All mounth</option>
+        <option value="*">All Mounth</option>
         <option value="1">January </option>
         <option value="2">February </option>
         <option value="3">March </option>
@@ -85,7 +85,7 @@
         class="custom-select mb-2 mr-sm-2"
         v-model="crontab_task.day_of_week"
       >
-        <option value="*">All day</option>
+        <option value="*">All Day</option>
         <option value="0">Sunday</option>
         <option value="1">Monday</option>
         <option value="2">Tuesday</option>
@@ -99,13 +99,13 @@
         type="submit"
         class="btn btn-success mb-2 btn_quatek"
         @click.prevent.stop="submit()"
-      >add</button>
+      >Add</button>
     </form>
     <small id="passwordHelpBlock" class="form-text text-muted">
       Learn more:
       <a href="https://zh.wikipedia.org/wiki/Cron" target="_blank">crontab wikipedia</a>
       <span>&#160;</span>
-      大陆用户请使用:
+      or:
       <a
         href="https://baike.baidu.com/item/crontab/8819388"
         target="_blank"
@@ -118,7 +118,7 @@
           <thead>
             <tr>
               <th scope="col">Task</th>
-              <th scope="col">Running time(min\hour\day\month\week)</th>
+              <th scope="col">Running Time(min\hour\day\month\week)</th>
               <th scope="col">Delete</th>
             </tr>
           </thead>

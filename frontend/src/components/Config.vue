@@ -6,16 +6,16 @@
           >Email and SMTP</b-nav-item
         >
         <b-nav-item :to="{ name: 'other-database' }" key="other-database"
-          >Database connection</b-nav-item
+          >Database Connection</b-nav-item
         >
         <b-nav-item :to="{ name: 'interval-task' }" key="interval-task"
-          >Task design(According to the interval)</b-nav-item
+          >Task Design(According to the interval)</b-nav-item
         >
         <b-nav-item :to="{ name: 'crontab-task' }" key="crontab-task"
-          >Task design(According to the time)</b-nav-item
+          >Task Design(According to the time)</b-nav-item
         >
         <b-nav-item :to="{ name: 'background-task' }" key="background-task"
-          >Administrator tools</b-nav-item
+          >Administrator Tools</b-nav-item
         >
         <b-nav-item :to="{ name: 'class-time-config' }" key="class-time-config"
           >Class Setting</b-nav-item
@@ -23,12 +23,12 @@
         <b-nav-item
           :to="{ name: 'card_number_convertor_config' }"
           key="card_number_convertor_config"
-          >Card number conversion tool</b-nav-item
+          >Card Number Conversion Tool</b-nav-item
         >
         <b-nav-item
           :to="{ name: 'update-cards-from-other-database' }"
           key="update-cards-from-other-database"
-          >Card number synchronization</b-nav-item
+          >Card Number Synchronization</b-nav-item
         >
         <br />
       </b-nav>

@@ -11,8 +11,8 @@
         <b-nav-item :to="{name: 'Index'}" exact>Home Page</b-nav-item>
         <b-nav-item :to="{name: 'Gates'}" v-if="is_authenticated">Gate List</b-nav-item>
         <b-nav-item :to="{name: 'Cards'}" v-if="is_authenticated">Card Management</b-nav-item>
-        <b-nav-item :to="{name: 'CardTests'}">ESD test</b-nav-item>
-        <b-nav-item :to="{name: 'real_time_data'}">Real-time data</b-nav-item>
+        <b-nav-item :to="{name: 'CardTests'}">ESD Test</b-nav-item>
+        <b-nav-item :to="{name: 'real_time_data'}">Real-time Data</b-nav-item>
         <!-- <b-nav-item :to="{name: 'Attendances'}">考勤管理</b-nav-item> -->
         <!-- <b-nav-item :to="{name: 'Analysis'}" v-if="is_authenticated">数据统计</b-nav-item> -->
         <b-nav-item :to="{name: 'Config'}" v-if="is_authenticated">Setting</b-nav-item>

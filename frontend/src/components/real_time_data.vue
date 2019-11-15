@@ -3,18 +3,18 @@
     <table class="table">
       <tr>
         <td>Log ID</td>
-        <td>Card number</td>
+        <td>Card Number</td>
         <td>Name</td>
-        <td>Job number</td>
-        <td>Card category</td>
+        <td>Job Number</td>
+        <td>Card Category</td>
         <td>In/Out</td>
         <td>MC ID</td>
         <td>Time</td>
-        <td>Teat result</td>
-        <td>Whether to test</td>
-        <td>Wrist strap data</td>
-        <td>Left shoes data</td>
-        <td>Right shoes data</td>
+        <td>Teat Result</td>
+        <td>Whether to Test</td>
+        <td>Wrist Strap Data</td>
+        <td>Left Shoes Data</td>
+        <td>Right Shoes Data</td>
       </tr>
       <tr v-for="log in get_logs" :key="log.log_id">
         <td>{{log.log_id}}</td>
