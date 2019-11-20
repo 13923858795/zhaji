@@ -2,97 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="747acae3-c7bc-45e9-9cbb-6624a32a3439" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend_english/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/.postcssrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/Dockerfile-debug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/cypress.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/dist.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/dist/css/app.3080d24f.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/dist/css/chunk-vendors.77e62442.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/dist/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/dist/img/gate.59ac3a28.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/dist/img/icons/android-chrome-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/dist/img/icons/android-chrome-512x512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/dist/img/icons/apple-touch-icon-120x120.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/dist/img/icons/apple-touch-icon-152x152.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/dist/img/icons/apple-touch-icon-180x180.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/dist/img/icons/apple-touch-icon-60x60.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/dist/img/icons/apple-touch-icon-76x76.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/dist/img/icons/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/dist/img/icons/favicon-16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/dist/img/icons/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/dist/img/icons/msapplication-icon-144x144.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/dist/img/icons/mstile-150x150.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/dist/img/icons/safari-pinned-tab.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/dist/img/logo.bf36c058.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/dist/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/dist/js/chunk-vendors.eee8a799.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/dist/js/chunk-vendors.eee8a799.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/dist/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/public/img/icons/android-chrome-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/public/img/icons/android-chrome-512x512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/public/img/icons/apple-touch-icon-120x120.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/public/img/icons/apple-touch-icon-152x152.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/public/img/icons/apple-touch-icon-180x180.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/public/img/icons/apple-touch-icon-60x60.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/public/img/icons/apple-touch-icon-76x76.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/public/img/icons/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/public/img/icons/favicon-16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/public/img/icons/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/public/img/icons/msapplication-icon-144x144.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/public/img/icons/mstile-150x150.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/public/img/icons/safari-pinned-tab.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/assets/gate.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/components/About.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/components/Attendances.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/components/BackgroundTask.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/components/CardCreate.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/components/CardTests.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/components/Cards.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/components/Config.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/components/ConfigClassTime.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/components/ConfigCrontabTask.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/components/ConfigIntervalTask.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/components/ConfigOtherDatabase.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/components/ConfigSystemConfig.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/components/ConfigUpdateCardsFromOtherDatabase.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/components/Footer.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/components/Gate.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/components/Gates.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/components/Header.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/components/Index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/components/LastFailedUpload.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/components/Login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/components/card_number_convertor_config.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/components/real_time_data.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/registerServiceWorker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/src/store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/tests/e2e/.eslintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/tests/e2e/plugins/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/tests/e2e/specs/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/tests/e2e/support/commands.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/tests/e2e/support/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/tests/unit/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/tests/unit/HelloWorld.spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend_english/vue.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose_bk.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose_bk.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_english/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_english/nginx.conf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,68 +16,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend_english/src/router.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2565" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend_english/vue.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="26" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend_english/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="35" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend_english/node_modules/@vue/cli-service/webpack.config.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="171">
-                <caret line="9" column="21" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="21" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend_english/node_modules/@vue/cli-service/lib/Service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1824" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend_english/node_modules/@vue/cli-service/lib/commands/serve.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="228">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend_english/Dockerfile-debug">
+        <entry file="file://$PROJECT_DIR$/docker-compose_bk.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="715">
+              <caret line="89" column="17" lean-forward="true" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="539">
+              <caret line="61" column="12" lean-forward="true" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/nginx.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="497">
+              <caret line="36" column="45" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="36" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -172,15 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend_english/nginx.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-187" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/nginx.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="418">
+              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -243,9 +118,11 @@
         <option value="$PROJECT_DIR$/backend/test.py" />
         <option value="$PROJECT_DIR$/backend/run_pro.py" />
         <option value="$PROJECT_DIR$/docker-compose_bk.yml" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/frontend_english/src/config.js" />
+        <option value="$PROJECT_DIR$/frontend_english/src/router.js" />
         <option value="$PROJECT_DIR$/frontend_english/node_modules/@vue/cli-service/lib/commands/serve.js" />
+        <option value="$PROJECT_DIR$/frontend_english/nginx.conf" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/frontend/nginx.conf" />
       </list>
     </option>
@@ -383,7 +260,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.14425163" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.15509762" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.41323212" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -392,22 +269,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/f5c004b3be6ad31ad0fc108141143eb7.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1394" selection-start-column="1394" selection-end-column="1394" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/test_clin.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/Dockerfile-debug">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/test_service.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/app/mod_task/routers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2356">
@@ -535,34 +396,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.debug.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose_bk.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1691">
-          <caret line="89" column="17" lean-forward="true" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="48" column="61" lean-forward="true" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend_english/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-342" />
@@ -640,11 +473,6 @@
         <state relative-caret-position="-1140" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend_english/src/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2565" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend_english/Dockerfile-debug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -674,13 +502,6 @@
         <state relative-caret-position="-1824" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend_english/node_modules/@vue/cli-service/lib/commands/serve.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -691,15 +512,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.debug.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend_english/src/components/Login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-843" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend_english/src/components/Index.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend_english/src/components/ConfigSystemConfig.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-798" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend_english/src/components/ConfigOtherDatabase.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-926" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend_english/src/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#3989#0" />
+            <element signature="e#0#3989#0" />
+            <element signature="e#0#3989#0" />
+            <element signature="e#0#3989#0" />
+            <element signature="e#0#3989#0" />
+            <element signature="e#0#3989#0" />
+            <element signature="e#0#3989#0" />
+            <element signature="e#0#3989#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend_english/node_modules/@vue/cli-service/lib/commands/serve.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose_bk.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="715">
+          <caret line="89" column="17" lean-forward="true" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend_english/nginx.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187" />
+        <state relative-caret-position="418">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="61" column="12" lean-forward="true" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/nginx.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="497">
+          <caret line="36" column="45" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="36" selection-end-column="45" />
         </state>
       </provider>
     </entry>
