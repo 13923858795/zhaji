@@ -38,27 +38,27 @@ services:
         condition: any
     networks:
       - quatek_net
-  vue:
-    image: registry.cn-shanghai.aliyuncs.com/weiguda/quatek_esd_frontend
-    build: ./frontend
-    restart: always
-    ports:
-      - "80:80"
-    volumes:
-      - ./frontend/dist:/usr/share/nginx/html
-    deploy:
-      replicas: 1
-      restart_policy:
-        condition: any
-    networks:
-      - quatek_net
+#  vue:
+#    image: registry.cn-shanghai.aliyuncs.com/weiguda/quatek_esd_frontend
+#    build: ./frontend
+#    restart: always
+#    ports:
+#      - "80:80"
+#    volumes:
+#      - ./frontend/dist:/usr/share/nginx/html
+#    deploy:
+#      replicas: 1
+#      restart_policy:
+#        condition: any
+#    networks:
+#      - quatek_net
 
   vue_english:
     image: registry.cn-shanghai.aliyuncs.com/weiguda/quatek_esd_frontend
     build: ./frontend_english
     restart: always
     ports:
-      - "8000:8000"
+      - "80:80"
     volumes:
       - ./frontend_english/dist:/usr/share/nginx/html
     deploy:
@@ -67,8 +67,6 @@ services:
         condition: any
     networks:
       - quatek_net
-
-
 
   mongo:
     image: "mongo:4"
