@@ -58,7 +58,7 @@ services:
     build: ./frontend
     restart: always
     ports:
-      - "80:80"
+      - "81:81"
     volumes:
       - ./frontend_english/dist:/usr/share/nginx/html
     deploy:
